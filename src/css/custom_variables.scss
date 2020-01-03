@@ -1,0 +1,177 @@
+// Colors
+$black:        hsl(0, 0%, 4%) !default
+$black-bis:    hsl(0, 0%, 7%) !default
+$black-ter:    hsl(0, 0%, 14%) !default
+$grey-darker:  hsl(0, 0%, 21%) !default
+$grey-dark:    hsl(0, 0%, 29%) !default
+$grey:         hsl(0, 0%, 48%) !default
+$grey-light:   hsl(0, 0%, 71%) !default
+$grey-lighter: hsl(0, 0%, 86%) !default
+$grey-lightest: hsl(0, 0%, 93%) !default
+$white-ter:    hsl(0, 0%, 96%) !default
+$white-bis:    hsl(0, 0%, 98%) !default
+$white:        hsl(0, 0%, 100%) !default
+
+$red:          rgba(250,69,56,100) !default;
+$orange:       rgba(249, 168,7,100) !default;
+$yellow:       rgba(248, 234,9,100) !default;
+$green:        hsl(141, 53%,  53%) !default;
+$turquoise:    hsl(171, 100%, 41%) !default;
+$cyan:         hsl(204, 71%,  53%) !default;
+$blue:         hsl(217, 71%,  53%) !default;
+$purple:       hsl(271, 100%, 71%) !default;
+
+$white-alpha:rgba(255,255,255,0.8)!default;
+$white-alpha-half:rgba(255,255,255,0.5)!default;
+$black-alpha:rgba(0,0,0,0.9)!default;
+$black-alpha-half:rgba(0,0,0,0.5)!default;
+$red-alpha:          rgba(250,69,56,0.9) !default;
+$orange-alpha:       rgba(249, 168,7,0.9) !default;
+$yellow-alpha:       rgba(248, 234,9,0.9) !default;
+
+// Typography
+
+$family-sans-serif: "Arial Black", BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Arial", sans-serif !default;
+$family-alt: "Helvetica Neue", "Helvetica", "Roboto",  BlinkMacSystemFont, -apple-system, serif !default
+
+//$family-serif: "Arial Black", BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Arial", sans-serif !default;
+$family-monospace: monospace !default;
+$render-mode: optimizeLegibility !default;
+
+$size-1: 3rem !default;
+$size-2: 2.6rem !default;
+$size-3: 2.2rem !default;
+$size-4: 1.8rem !default;
+$size-5: 1.4rem !default;
+$size-6: 1.2rem !default;
+$size-7: 1rem !default;
+
+$weight-light: 300 !default;
+$weight-normal: 400 !default;
+$weight-medium: 500 !default;
+$weight-semibold: 600 !default;
+$weight-bold: 700 !default;
+
+// Spacing
+
+$block-spacing: 1.6rem !default;
+
+// Responsiveness
+
+// The container horizontal gap, which acts as the offset for breakpoints
+$gap: 32px !default;
+// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
+$tablet: 769px !default;
+// 960px container + 4rem
+$desktop: 960px + (2 * $gap) !default;
+// 1152px container + 4rem
+$widescreen: 1152px + (2 * $gap) !default;
+$widescreen-enabled: true !default;
+// 1344px container + 4rem
+$fullhd: 1344px + (2 * $gap) !default;
+$fullhd-enabled: true !default;
+
+// Miscellaneous
+
+$easing: ease-out !default;
+$radius-small: 0px !default;
+$radius: 0px !default;
+$radius-large: 0px !default;
+//$radius-rounded: 290486px !default;
+//$speed: 86ms !default;
+//$navbar-background-color: $white !default
+$navbar-box-shadow-size: 0 0 0 0 !default;
+//$navbar-box-shadow-color: $transparent !default
+$navbar-background-color:none;
+
+$navbar-height: 3.25rem !default
+$navbar-padding-vertical:2rem !default
+$navbar-padding-horizontal: 3.25rem !default;
+$navbar-z: 30 !default
+$navbar-fixed-z: 30 !default
+
+// Flags
+
+$primary: $orange!default;
+
+$info: $yellow !default;
+$success: $green !default;
+$warning: $yellow !default;
+$danger: $red !default;
+
+
+
+// Text colors
+
+$text: $black !default;
+$text-invert: findColorInvert($text) !default;
+$text-light: $white !default;
+$text-strong: $black !default;
+
+
+
+$xy_lines_000:url( /img/xy_lines_black.png); //black
+$y_lines_000:url( /img/y_lines_black_24x100.png); //black
+.lined_black{background-image:$xy_lines_000;background-repeat: repeat;width:100%;}
+.left_stripe_black-lines{
+  background-image:$y_lines_000;
+  background-repeat: repeat-y;
+}
+
+$xy_lines_FFF:url( /img/xy_lines_white.png); //white
+$y_lines_FFF:url( /img/y_lines_white_24x100.png); //white
+.lined_white{background-image:$xy_lines_FFF;background-repeat: repeat; }
+.left_stripe_white-lines{
+  background-image:$y_lines_FFF;
+  background-repeat: repeat-y;
+}
+
+$y_stripe_white:url(/img/y-white-24x1.svg);
+.left_stripe_white{background-image:$y_stripe_white;background-repeat: repeat-y;}
+$y_stripe_black:url(/img/y-black-24x1.svg);
+.left_stripe_black{background-image:$y_stripe_black;background-repeat: repeat-y;}
+$y_stripe_yellow:url(/img/y-yellow-24x1.svg);
+.left_stripe_yellow{background-image:$y_stripe_yellow;background-repeat: repeat-y;}
+$y_stripe_red:url(/img/y-red-24x1.svg);
+.left_stripe_red{background-image:$y_stripe_red;background-repeat: repeat-y;}
+$y_stripe_orange:url(/img/y-orange-24x1.svg);
+.left_stripe_orange{background-image:$y_stripe_orange;background-repeat: repeat-y;}
+
+$y_stripe_roy:url(/img/y-roy-24x1.svg);
+.left_stripe_roy{background-image:$y_stripe_roy;background-repeat: repeat-y;}
+$y_stripe_oyw:url(/img/y-oyw-24x1.svg);
+.left_stripe_oyw{background-image:$y_stripe_oyw;background-repeat: repeat-y;}
+$y_stripe_ywr:url(/img/y-ywr-24x1.svg);
+.left_stripe_ywr{background-image:$y_stripe_ywr;background-repeat: repeat-y;}
+$y_stripe_wro:url(/img/y-wro-24x1.svg);
+.left_stripe_wro{background-image:$y_stripe_wro;background-repeat: repeat-y;}
+$y_stripe_wwr:url(/img/y-wwr-24x1.svg);
+.left_stripe_wwr{background-image:$y_stripe_wwr;background-repeat: repeat-y;}
+$y_stripe_rro:url(/img/y-rro-24x1.svg);
+.left_stripe_rro{background-image:$y_stripe_rro;background-repeat: repeat-y;}
+$y_stripe_ooy:url(/img/y-ooy-24x1.svg);
+.left_stripe_ooy{background-image:$y_stripe_ooy;background-repeat: repeat-y;}
+$y_stripe_oor:url(/img/y-oor-24x1.svg);
+.left_stripe_oor{background-image:$y_stripe_oor;background-repeat: repeat-y;}
+$y_stripe_ror:url(/img/y-ror-24x1.svg);
+.left_stripe_ror{background-image:$y_stripe_ror;background-repeat: repeat-y;}
+$y_stripe_yoy:url(/img/y-yoy-24x1.svg);
+.left_stripe_yoy{background-image:$y_stripe_yoy;background-repeat: repeat-y;}
+$y_stripe_byb:url(/img/y-byb-24x1.svg);
+.left_stripe_byb{background-image:$y_stripe_byb;background-repeat: repeat-y;}
+$y_stripe_yby:url(/img/y-yby-24x1.svg);
+.left_stripe_yby{background-image:$y_stripe_yby;background-repeat: repeat-y;}
+$y_stripe_ywy:url(/img/y-ywy-24x1.svg);
+.left_stripe_ywy{background-image:$y_stripe_ywy;background-repeat: repeat-y;}
+$y_stripe_yry:url(/img/y-yry-24x1.svg);
+.left_stripe_yry{background-image:$y_stripe_yry;background-repeat: repeat-y;}
+$y_stripe_wbw:url(/img/y-wbw-24x1.svg);
+.left_stripe_wbw{background-image:$y_stripe_wbw;background-repeat: repeat-y;}
+$y_stripe_bob:url(/img/y-bob-24x1.svg);
+.left_stripe_bob{background-image:$y_stripe_bob;background-repeat: repeat-y;}
+$y_stripe_obo:url(/img/y-obo-24x1.svg);
+.left_stripe_obo{background-image:$y_stripe_obo;background-repeat: repeat-y;}
+$y_stripe_oro:url(/img/y-oro-24x1.svg);
+.left_stripe_oro{background-image:$y_stripe_oro;background-repeat: repeat-y;}
+$y_stripe_owo:url(/img/y-owo-24x1.svg);
+.left_stripe_owo{background-image:$y_stripe_owo;background-repeat: repeat-y;}

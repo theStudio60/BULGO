@@ -1,0 +1,42 @@
+baseurl = "/"
+languageCode = "en-us"
+languageLang = "en"
+title = "Bulgo"
+subtitle = "Bulma css & hugo"
+# RSS, categories and tags disabled for an easy start
+# See configuration options for more details:
+# https://gohugo.io/getting-started/configuration/#toml-configuration
+disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+
+[permalinks]
+  posts = "/:year/:month/:title/"
+
+[Params]
+# logo = "img/logo.svg"
+
+# Bulgo customized elements
+navbar_color = "white"
+navbar_left_stripe = "roy"
+
+page_color = ""
+page_left_stripe = ""
+page_background_image = ""
+
+footer_color = "white"
+footer_left_stripe = "roy"
+
+
+
+copyright_note_fr = "Tous droits réservés."
+copyright_note_en = "All rights reserved."
+
+company_name= "Studio60"
+company_phone = "+41 123 456 78"
+company_mail = "loremipsum@mail.com"
+
+ facebook = "https://facebook.com/"
+ twitter = "https://twitter.com/"
+ instagram = "https://instagram.com/"
+ youtube = "https://youtube.com/"
+ linkedin = "https://linkedin.com/"
+ reddit = "https://reddit.com/"

@@ -1,0 +1,16 @@
+{{ define "main" }}
+
+{{ $section := .Site.GetPage "section" .Section }}
+
+{{ $page_color := .Params.page_color }}
+{{ $page_left_stripe := .Params.page_left_stripe }}
+{{ $page_background_image := .Params.page_background_image }}
+
+<section class="hero section-color-{{ $page_color }}" style="background-image: url(images/{{ $page_background_image }});background-repeat:no-repeat;background-size:cover;">
+  <div class="hero-body left_stripe_{{ $page_left_stripe }}">
+    <div class="container" >
+      <div class="content">{{- .Content -}}</div>
+    </div>
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,24 @@
+{{ $footer_color := .Params.footer_color }}
+{{ $footer_left_stripe := .Params.footer_left_stripe }}
+
+<footer class="footer footer-color-{{ $footer_color }}  left_stripe_{{ $footer_left_stripe }} ">
+  <div class="footer-body">
+
+
+  <div class="container">
+
+  <div class="columns is-centered">
+
+  <div class="column is-12 is-pulled-right has-text-right">
+    <p class=" ">
+      &copy; {{ now.Format "2006"}} - {{ .Site.Params.company_name }} - {{ .Site.Params.copyright_note_en }}
+    <br>
+      <a>Terms of Service</a>&nbsp;-&nbsp;<a>Privacy Policy</a>
+
+    </p>
+  </div>
+
+  </div>
+  </div>
+</div>
+</footer>

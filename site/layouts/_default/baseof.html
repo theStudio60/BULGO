@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="{{ $.Site.Language.Lang }}">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
+
+  <title>{{ $.Site.Title }}</title>
+
+  {{ $stylesheet := .Site.Data.webpack.main }}
+  {{ with $stylesheet.css }}
+    <link href="{{ relURL . }}" rel="stylesheet">
+  {{ end }}
+
+  <style media="screen">
+  @font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  </style>
+
+  <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
+  <!--<script src="vendors/easings.min.js"></script>-->
+
+
+  <!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+  <!--<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
+
+
+</head>
+
+<body >
+
+  {{ block "header" . }}{{ partial "header" . }}{{end}}
+  <div class="fp-left is-pulled-left has-text-left" style="position:absolute;left:-30px;bottom:10px;">
+    <div class="fa-rotate-270 is-flex">
+      <i class="fa fa-lg fa-home fa-rotate-90"></i>
+      <h1 class="" style="font-size:16px; padding-left:8px;">home</h1>
+    </div>
+  </div>
+  <div id="myFullpage">
+    {{ block "main" . }}{{end}}
+
+    {{ block "footer" . }}{{ partial "footer" . }}{{end}}
+  </div>
+  {{ $script := .Site.Data.webpack.main }}
+  {{ with $script.js }}
+      <script src="{{ relURL . }}"></script>
+  {{ end }}
+</body>
+
+</html>

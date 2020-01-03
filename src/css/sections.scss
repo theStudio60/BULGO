@@ -1,0 +1,126 @@
+//section commons
+.hero-body {
+  height:100%;
+  margin: 0;
+  padding-top: $navbar-height ;
+  padding-left: 32px!important;
+  padding-right: 8px!important;
+  padding-bottom: 0px!important;
+  -webkit-box-flex: 1;
+  flex-grow: 1;
+  flex-shrink: 0;
+  background-repeat: repeat-y;
+}
+
+.hero-parallax {
+  height: 100%;
+  margin-left: -8px;
+  margin-right: -18px;
+  margin-bottom:0;
+  padding-top:$navbar-height * 2 ;
+  padding-right: 0!important;
+  padding-bottom: $navbar-height!important;
+  background-attachment:fixed;
+  background-position: center;
+  background-size:cover;
+  -webkit-clip-path:polygon(0 100%, 0 0%, 100% 20%, 100% 100%);
+  clip-path:polygon(0 100%, 0 0%, 100% 20%, 100% 100%);
+  z-index:-1;
+}
+.parallax-container{
+  margin-top: $navbar-height;
+  margin-bottom: $navbar-height;
+  z-index:10;
+  -webkit-clip-path:polygon(0 90%, 0 10%, 100% 20%, 100% 80%);
+  clip-path:polygon(0 90%, 0 10%, 100% 20%, 100% 80%);
+  .container{
+    padding: $navbar-height;
+  }
+}
+.parallax-container.parallax-white,
+.parallax-container.parallax-black,
+.parallax-container.parallax-orange,
+.parallax-container.parallax-yellow,
+.parallax-container.parallax-red{
+  background-repeat: repeat;
+  width:100%;
+}
+
+.parallax-container.parallax-white{background-color:$white-alpha;background-image:$xy_lines_FFF;}
+.parallax-container.parallax-black{background-color:$black-alpha-half;background-image:$xy_lines_000;}
+.parallax-container.parallax-orange{background-color:$orange-alpha;}
+.parallax-container.parallax-yellow{background-color:$yellow-alpha;background-image:$xy_lines_FFF;}
+.parallax-container.parallax-red{background-color:$red-alpha;}
+
+.section-color-default,
+.section-color-white,
+.footer-color-white,
+.footer-color-default{
+  .content,.title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $black;}
+  .button{background-color: $black;color: $white;}
+  .button:focus,.button:hover{background-color: $white;color: $black;border-color: $black;background-image:$y_stripe_roy;background-repeat: repeat-y;}
+  .hero-body{background-color:$white-alpha;}
+  a{color: $red;}a:hover{color: $orange;}a:focus{color: $orange;}
+  hr{background-color: $black};
+  code{background-color: $yellow;}
+  pre{background-color: $white;}
+  color: $black;
+  background-color: $white;
+}
+
+.section-color-orange,
+.section-color-primary,
+.footer-color-orange,
+.footer-color-primary{
+  .content,.title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $black;}
+  .button{background-color: transparent;color: $black;border-color: $black;}
+  .button:focus,.button:hover{background-color: $black;color: $white;border-color: $black;}
+  .hero-body{
+    background-color:$orange-alpha;
+    //.parallax{opacity: 0.8;background-color:$orange-alpha;
+  }
+
+  a{color: $red;}a:focus,a:hover{color: $white;}
+  hr{background-color: $black};
+  code,pre{background-color: $white;}
+  color: $white;
+  background-color: $orange;
+}
+
+.section-color-yellow,.footer-color-yellow{
+  .content,.title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $black;}
+  .button{background-color: transparent;color: $black;border-color: $black;}
+  .button:focus,.button:hover{background-color: $white;color: $black;border-color: $black;}
+  .hero-body{background-color:$yellow-alpha; }
+  a{color: $red;}a:focus,a:hover{color: $orange;}
+  hr{background-color: $black};
+  code,pre{background-color: $white;}
+  color: $black;
+  background-color: $yellow;
+}
+
+.section-color-red,.footer-color-red{
+  .title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $white;}
+  .button{background-color: $red;color: $white;}
+  .button:focus,.button:hover{background-color: $red;color: $black;border-color: $black;}
+  .hero-body{background-color:$red-alpha;}
+  a{color: $black;}
+  hr{background-color: $orange};
+  code,pre{background-color: $white;}
+  color: $white;
+  background-color: $red;
+}
+
+.section-color-black,.footer-color-black{
+  .content,.title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $white;}
+  .button{color: $white;}
+  .button{background-color: $white;color: $black;}
+  .button:focus,.button:hover{background-color: $black;color: $yellow;border-color: $yellow;}
+  .hero-body{background-color:$black-alpha;}
+  a{color: $red;}
+  a:hover{color: $yellow;}
+  hr{background-color: $orange};
+  code,pre{background-color: $white;}
+  color: $white;
+  background-color: $black;
+}
