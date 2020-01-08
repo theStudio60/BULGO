@@ -4,14 +4,14 @@ date: 2019-11-14T19:02:50-07:00
 draft: false
 
 navbar_color: "orange"
-navbar_left_stripe: "red"
+navbar_left_stripe: "black"
 
-page_color: "white"
-page_left_stripe: "black"
-page_background_image: "cassette_tape_bw.png"
+page_color: "orange"
+page_left_stripe: "white"
+page_background_image: " "
 
-footer_color: "black"
-footer_left_stripe: "red"
+footer_color: "orange"
+footer_left_stripe: "black"
 
 ---
 

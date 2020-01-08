@@ -3,15 +3,15 @@ title: 'tech'
 date: 2019-11-14T19:02:50-07:00
 draft: false
 
-navbar_color: "white"
-navbar_left_stripe: "orange"
+navbar_color: "red"
+navbar_left_stripe: "black"
 
-page_color: "white"
-page_left_stripe: "black"
+page_color: "red"
+page_left_stripe: "roy"
 page_background_image: "cassette_tape_bw"
 
-footer_color: "black"
-footer_left_stripe: "red"
+footer_color: "red"
+footer_left_stripe: "roy"
 
 ---
 
