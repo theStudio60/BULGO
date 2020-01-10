@@ -41,7 +41,7 @@ $.fancybox.defaults.animationEffect = "fade";
 
 // Initializing it
 var fullPageInstance = new fullpage('#myFullpage', {
-  sectionSelector: '.hero',
+  sectionSelector: '.section',
   scrollingSpeed: 700,
   navigation: true,
   navigationPosition: 'left',

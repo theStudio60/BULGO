@@ -45,9 +45,9 @@
   </div>
   <div id="myFullpage">
     {{ block "main" . }}{{end}}
-
     {{ block "footer" . }}{{ partial "footer" . }}{{end}}
   </div>
+
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}
       <script src="{{ relURL . }}"></script>
