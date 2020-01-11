@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <base href="{{ if getenv "CONTEXT" }}{{ cond (eq "production" (getenv "CONTEXT")) (getenv "URL") (getenv "DEPLOY_PRIME_URL") }}{{ else }}{{ $.Site.BaseURL }}{{ end }}">
 
+
   <title>{{ $.Site.Title }}</title>
 
   {{ $stylesheet := .Site.Data.webpack.main }}
@@ -24,6 +25,15 @@
   }
   </style>
 
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="android-chrome" sizes="512x512" href="/android-chrome-512x512.png">
+    <link rel="android-chrome" sizes="192x192" href="/android-chrome-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
   <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
   <!--<script src="vendors/easings.min.js"></script>-->
 
@@ -37,16 +47,11 @@
 <body >
 
   {{ block "header" . }}{{ partial "header" . }}{{end}}
-  <div class="fp-left is-pulled-left has-text-left" style="position:absolute;left:-30px;bottom:10px;">
-    <div class="fa-rotate-270 is-flex">
-      <i class="fa fa-lg fa-home fa-rotate-90"></i>
-      <h1 class="" style="font-size:16px; padding-left:8px;">home</h1>
-    </div>
-  </div>
-  <div id="myFullpage">
+
     {{ block "main" . }}{{end}}
-    <!--{{ block "footer" . }}{{ partial "footer" . }}{{end}}-->
-  </div>
+    <!--{{ block "footer" . }}
+    {{ partial "footer" . }}{{end}}
+    -->
 
   {{ $script := .Site.Data.webpack.main }}
   {{ with $script.js }}

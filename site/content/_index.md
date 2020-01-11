@@ -3,10 +3,10 @@ title: 'Home'
 date: 2019-11-14T19:02:50-07:00
 draft: false
 
-navbar_color: "white"
+navbar_color: "transparent"
 navbar_left_stripe: "roy"
 
-page_color: ""
+page_color: "white"
 page_left_stripe: ""
 page_background_image: ""
 

@@ -18,6 +18,7 @@ html.fp-enabled,
     -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 .fp-section {
+
     position: relative;
     -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
     -moz-box-sizing: border-box; /* <=28 */
@@ -60,26 +61,26 @@ html.fp-enabled,
     -ms-user-select: none; /* IE10+ */
     position: absolute;
     z-index: 4;
-    top: 50%;
+    top: 85%;
     cursor: pointer;
     width: 0;
     height: 0;
     border-style: solid;
-    margin-top: -38px;
+    margin-top: 8px;
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
 .fp-controlArrow.fp-prev {
-    left: 15px;
+    left:32px;
     width: 0;
-    border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #fff transparent transparent;
+    border-width: 24px 16px 24px 0;
+    border-color: transparent #000 transparent transparent;
 }
 .fp-controlArrow.fp-next {
-    right: 15px;
-    border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #fff;
+    right:8px;
+    border-width: 24px 0 24px 16px;
+    border-color: transparent transparent transparent #000;
 }
 .fp-scrollable {
     overflow: hidden;
@@ -98,16 +99,16 @@ html.fp-enabled,
 #fp-nav {
     position: fixed;
     z-index: 100;
-    margin-top: -32px;
-    top: 50%;
+    margin-top: 52px;
+    top: 40%;
     opacity: 1;
     -webkit-transform: translate3d(0,0,0);
 }
 #fp-nav.fp-right {
-    right: 17px;
+    right:8px;
 }
 #fp-nav.fp-left {
-    left: 0px!important;
+    left:-8px;
 }
 .fp-slidesNav{
     position: absolute;
@@ -116,15 +117,15 @@ html.fp-enabled,
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
-    left: 0 !important;
-    right: 0;
-    margin: 0 auto !important;
+    //left: 0 !important;
+    //right: 0;
+    //margin: 0 auto !important;
 }
 .fp-slidesNav.fp-bottom {
     bottom: 17px;
 }
 .fp-slidesNav.fp-top {
-    top: 17px;
+    top: 24px;
 }
 #fp-nav ul,
 .fp-slidesNav ul {
@@ -134,9 +135,11 @@ html.fp-enabled,
 #fp-nav ul li,
 .fp-slidesNav ul li {
     display: block;
-    width: 16px;
-    height: 13px;
-    margin: 4px;
+    width:24px;
+    height:40px;
+    margin: 0px;
+    padding: 0;
+
     position:relative;
 }
 .fp-slidesNav ul li {
@@ -149,6 +152,10 @@ html.fp-enabled,
     z-index: 1;
     width: 100%;
     height: 100%;
+
+        border-color: #000;
+        border-width: thin;
+
     cursor: pointer;
     text-decoration: none;
 }
@@ -156,34 +163,30 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 12px;
-    width: 12px;
-    margin: -6px 0 0 -6px;
-    border-radius: 100%;
+    height: 24px;
+    width: 24px;
+    margin-left: 0;
+    padding-left: 0;
+    border-radius: 0%;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-    border-radius: 50%;
+    border-radius:0;
     position: absolute;
     z-index: 1;
-    height: 4px;
-    width: 4px;
+    height: 16px;
+    width: 8px;
     border: 0;
-    background: #FFF;
-    
-    left: 50%;
+    background: #fff;
+    left: 8px;
     top: 50%;
-    margin: -2px 0 0 -2px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{
-    width: 10px;
-    height: 10px;
-    margin: -5px 0px 0px -5px;
+    width: 16px;
+    height: 16px;
+    //margin: 0px 0px 0px 0px;
 }
 #fp-nav ul li .fp-tooltip {
     position: absolute;

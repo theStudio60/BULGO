@@ -1,19 +1,50 @@
+# BE CAREFUL - Dont fuck around with this file
+# DONT TOUCH THESE 3 LINES !!!
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Bulgo"
-subtitle = "Bulma css & hugo"
+MetaDataFormat = "toml"
+#
+enableRobotsTXT = true
+enableGitInfo = false
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
 disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
+#canonifyurls = true
+#uglyurls = true
+summaryLength = 110
+Paginate = 3 # this is set low for demonstrating with dummy content. Set to a higher number
+# Multilangues setup
+DefaultContentLanguage = "en"
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = true
+
+[sitemap]
+  changefreq = "monthly"
+  priority = 0.5
+  filename = "sitemap.xml"
 
 [permalinks]
   posts = "/:year/:month/:title/"
 
+###
+#
+# Website main infos
+#
+###
+title = "Bulgo"
+subtitle = "bulma css"
+description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+author = " "
+
+
 [Params]
 # logo = "img/logo.svg"
-metadescription= "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor."
+title = "Bulgo"
+subtitle = "Bulma css & hugo"
+
+metadescription = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
 # Bulgo customized elements
 navbar_color = "white"
 navbar_left_stripe = "roy"

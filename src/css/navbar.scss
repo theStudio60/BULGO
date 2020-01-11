@@ -24,7 +24,7 @@ nav{
   height:100vh;
     overflow: auto;
 
-    padding-top:25%;
+    padding-top:15%;
     padding-bottom:25%;
     background-image:$xy_lines_FFF;background-repeat: repeat;
 
@@ -36,12 +36,15 @@ nav{
          align-items: center;
          //max-width: 272px;
        }
+.navbar-brand{
+
 .navbar-brand-logo{
-  h1{font-size: 24px;margin-left: 12px;}
-  i{font-size: 16px;}
   position: absolute;
-  margin-left:-8;
-  padding-left:0;
+  h1{font-size: 24px;margin-left:16px;}
+  i{font-size: 8px;margin-left:0;padding-left: 0}
+
+  padding-left:8px;
+}
 }
 
  #navbarMenu{
@@ -59,6 +62,17 @@ nav{
   i{margin-right: 4px;font-size: 16px;}
   font-size: 20px;text-transform: uppercase;font-family:$family-alt;
 }
+//style: 'transparent'
+.navbar-color-transparent{
+  .navbar-item{color: $black;}
+  .navbar-item:focus, .navbar-item:hover{color: $white;background-color: $red;}
+  .navbar-brand{a{color: $black;}}
+  .navbar-menu.is-active{background-color: $white-alpha;}
+  .navbar-brand-logo:focus,.navbar-brand-logo:hover{i{color:$black;background-color:white;}color:$red;}
+  background-color: transparent;
+  color:$black;
+}
+
 //style: 'white'
 .navbar-color-,
 .navbar-color-default,

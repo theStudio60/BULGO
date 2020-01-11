@@ -7,7 +7,7 @@
     <div class="navbar-brand " >
       <a class="navbar-item navbar-brand-logo is-uppercase" href="{{.Site.BaseURL | absURL }}">
         <i class="fa fa-2x fa-asterisk fa-spin" ></i>
-        <h1 class="">{{ .Site.Title }}</h1>
+        <h1 class="">{{ $.Site.Params.Title }}</h1>
       </a>
       <a  style="background-color:{{ $navbar_color }}" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
         <span aria-hidden="true"></span>
@@ -22,14 +22,11 @@
           <i class="fa fa-home"></i>
           home
         </a>
-        <a  class="navbar-item navbar-menu-entry" href="{{ "/about" | absURL }}">
-          <i class="fa fa-user"></i>
-          about
-        </a>
-        <a  class="navbar-item navbar-menu-entry" href="{{ "/portfolio" | absURL }}">
+        <a  class="navbar-item navbar-menu-entry" href="{{ "/ebook" | absURL }}">
           <i class="fa fa-book"></i>
-          portfolio
+          ebook
         </a>
+        
         <a  class="navbar-item navbar-menu-entry" href="{{ "/tech" | absURL }}">
           <i class="fa fa-cogs"></i>
           tech
