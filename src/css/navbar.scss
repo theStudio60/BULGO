@@ -24,7 +24,7 @@ nav{
   height:100vh;
     overflow: auto;
 
-    padding-top:15%;
+    padding-top:25%;
     padding-bottom:25%;
     background-image:$xy_lines_FFF;background-repeat: repeat;
 
@@ -36,15 +36,12 @@ nav{
          align-items: center;
          //max-width: 272px;
        }
-.navbar-brand{
-
 .navbar-brand-logo{
+  h1{font-size: 24px;margin-left: 12px;}
+  i{font-size: 16px;}
   position: absolute;
-  h1{font-size: 24px;margin-left:16px;}
-  i{font-size: 8px;margin-left:0;padding-left: 0}
-
-  padding-left:8px;
-}
+  margin-left:-8;
+  padding-left:0;
 }
 
  #navbarMenu{
@@ -62,17 +59,6 @@ nav{
   i{margin-right: 4px;font-size: 16px;}
   font-size: 20px;text-transform: uppercase;font-family:$family-alt;
 }
-//style: 'transparent'
-.navbar-color-transparent{
-  .navbar-item{color: $black;}
-  .navbar-item:focus, .navbar-item:hover{color: $white;background-color: $red;}
-  .navbar-brand{a{color: $black;}}
-  .navbar-menu.is-active{background-color: $white-alpha;}
-  .navbar-brand-logo:focus,.navbar-brand-logo:hover{i{color:$black;background-color:white;}color:$red;}
-  background-color: transparent;
-  color:$black;
-}
-
 //style: 'white'
 .navbar-color-,
 .navbar-color-default,
@@ -81,7 +67,7 @@ nav{
   .navbar-item:focus, .navbar-item:hover{color: $white;background-color: $red;}
   .navbar-brand{a{color: $black;}}
   .navbar-brand-logo:focus,.navbar-brand-logo:hover{i{color:$white;background-color:transparent;}color:$red;}
-  background-color: $white-alpha;
+  background-color: $alpha-white;
   color:$black;
 }
 
@@ -92,7 +78,7 @@ nav{
     .navbar-brand{a{color: $white;}}
     .navbar-brand-logo:focus,.navbar-brand-logo:hover{color:$yellow;}
     color: $white;
-    background-color: $black-alpha;
+    background-color: $alpha-black;
 }
 
 //style: 'orange'
@@ -101,7 +87,7 @@ nav{
   .navbar-item:focus,.navbar-item:hover{color: $red; }
   .navbar-brand{a{color: $white;}}
   .navbar-brand-logo:focus,.navbar-brand-logo:hover{color:$red;}
-  background-color: $orange-alpha;
+  background-color: $alpha-orange;
   color:$white;
 }
 
@@ -111,7 +97,7 @@ nav{
   .navbar-item:focus,.navbar-item:hover{color: $red;}
   .navbar-brand{a{color: $black;}}
   .navbar-brand-logo:focus,.navbar-brand-logo:hover{i{color:$white}color:$red;}
-  background-color: $yellow-alpha;
+  background-color: $alpha-yellow;
   color:$black;
 }
 
@@ -123,5 +109,5 @@ nav{
   .navbar-brand-logo:focus,.navbar-brand-logo:hover{color:$white;}
   background-image:$y_stripe_orange;background-repeat: repeat-y;
     color: $white;
-    background-color: $red-alpha;
+    background-color: $alpha-red;
 }

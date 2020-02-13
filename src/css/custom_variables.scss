@@ -1,4 +1,11 @@
-// Colors
+
+/*
+#
+# 01 : colors definition
+#
+#
+*/
+
 $black:        hsl(0, 0%, 4%) !default
 $black-bis:    hsl(0, 0%, 7%) !default
 $black-ter:    hsl(0, 0%, 14%) !default
@@ -15,26 +22,89 @@ $white:        hsl(0, 0%, 100%) !default
 $red:          rgba(250,69,56,100) !default;
 $orange:       rgba(249, 168,7,100) !default;
 $yellow:       rgba(248, 234,9,100) !default;
-$green:        hsl(141, 53%,  53%) !default;
-$turquoise:    hsl(171, 100%, 41%) !default;
-$cyan:         hsl(204, 71%,  53%) !default;
-$blue:         hsl(217, 71%,  53%) !default;
-$purple:       hsl(271, 100%, 71%) !default;
 
-$white-alpha:rgba(255,255,255,0.8)!default;
-$white-alpha-half:rgba(255,255,255,0.5)!default;
-$black-alpha:rgba(0,0,0,0.9)!default;
-$black-alpha-half:rgba(0,0,0,0.5)!default;
-$red-alpha:          rgba(250,69,56,0.9) !default;
-$orange-alpha:       rgba(249, 168,7,0.9) !default;
-$yellow-alpha:       rgba(248, 234,9,0.9) !default;
+$primary: $grey-dark!default;
 
-// Typography
+//$green:        hsl(141, 53%,  53%) !default;
+//$turquoise:    hsl(171, 100%, 41%) !default;
+//$cyan:         hsl(204, 71%,  53%) !default;
+//$blue:         hsl(217, 71%,  53%) !default;
+//$purple:       hsl(271, 100%, 71%) !default;
+
+/*
+# alpha (opacity)
+*/
+
+//$white-alpha:rgba(255,255,255,0.8)!default;
+//$white-alpha-half:rgba(255,255,255,0.5)!default;
+//$black-alpha:rgba(0,0,0,0.9)!default;
+//$black-alpha-half:rgba(0,0,0,0.5)!default;
+//$red-alpha:          rgba(250,69,56,0.9) !default;
+//$orange-alpha:       rgba(249, 168,7,0.9) !default;
+//$yellow-alpha:       rgba(248, 234,9,0.9) !default;
+$alpha-white:rgba(255,255,255,0.9);
+$alpha-white-half:rgba(255,255,255,0.5);
+$alpha-black:rgba(0,0,0,0.9);
+$alpha-black-half:rgba(0,0,0,0.5);
+
+$alpha-grey:rgba($grey,0.9);
+
+$alpha-yellow:rgba($yellow,0.9) ;
+$alpha-orange:rgba($orange,0.9) ;
+$alpha-red:rgba($red,0.9);
+
+// # primary alpha
+$alpha-primary:$alpha-white;
+
+// # background color attribution
+
+.has-background-white
+{background-color:$white;}
+.has-background-alpha-white,
+{background-color:$alpha-white;}
+.has-background-black
+{background-color:$black;}
+.has-background-alpha-black,
+{background-color:$alpha-black;}
+.has-background-grey
+{background-color:$grey;}
+.has-background-alpha-grey,
+{background-color:$alpha-grey;}
+.has-background-yellow
+{background-color:$yellow;}
+.has-background-alpha-yellow
+{background-color:$alpha-yellow;}
+.has-background-orange
+{background-color:$orange;}
+.has-background-alpha-orange
+{background-color:$alpha-orange;}
+.has-background-red
+{background-color:$red;}
+.has-background-alpha-red
+{background-color:$alpha-red;}
+/*
+#
+# 03 : Backdrop filter FX
+#
+*/
+$backdrop-alpha: blur(30px)   ;
+.has-background-alpha
+{
+  backdrop-filter:$backdrop-alpha;
+}
+
+/*
+#
+# Typography
+#
+*/
 
 $family-sans-serif: "Arial Black", BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Arial", sans-serif !default;
-$family-alt: "Helvetica Neue", "Helvetica", "Roboto",  BlinkMacSystemFont, -apple-system, serif !default
+$family-serif: "Helvetica Neue", "Helvetica", "Roboto",  BlinkMacSystemFont, -apple-system, serif !default;
 
-//$family-serif: "Arial Black", BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Arial", sans-serif !default;
+$family-base:$family-sans-serif;
+$family-alt:$family-serif;
+
 $family-monospace: monospace !default;
 $render-mode: optimizeLegibility !default;
 
@@ -60,46 +130,22 @@ $block-spacing: 1.6rem !default;
 
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 32px !default;
-// 960, 1152, and 1344 have been chosen because they are divisible by both 12 and 16
-$tablet: 769px !default;
-// 960px container + 4rem
-$desktop: 960px + (2 * $gap) !default;
-// 1152px container + 4rem
-$widescreen: 1152px + (2 * $gap) !default;
-$widescreen-enabled: true !default;
-// 1344px container + 4rem
-$fullhd: 1344px + (2 * $gap) !default;
-$fullhd-enabled: true !default;
 
 // Miscellaneous
+$easing: ease-in-out !default;
 
-$easing: ease-out !default;
 $radius-small: 0px !default;
 $radius: 0px !default;
 $radius-large: 0px !default;
-//$radius-rounded: 290486px !default;
-//$speed: 86ms !default;
-//$navbar-background-color: $white !default
-$navbar-box-shadow-size: 0 0 0 0 !default;
-//$navbar-box-shadow-color: $transparent !default
+$radius-rounded: 290486px !default;
+$speed: 86ms !default;
+
+
+$navbar-box-shadow-color:none;
 $navbar-background-color:none;
-
-$navbar-height: 3.25rem !default
-$navbar-padding-vertical:2rem !default
-$navbar-padding-horizontal: 3.25rem !default;
-$navbar-z: 30 !default
-$navbar-fixed-z: 30 !default
-
-// Flags
-
-$primary: $orange!default;
-
-$info: $yellow !default;
-$success: $green !default;
-$warning: $yellow !default;
-$danger: $red !default;
-
-
+$navbar-height: 4rem !default;
+$navbar-z: 30 !default;
+$navbar-fixed-z: 30 !default;
 
 // Text colors
 
@@ -107,6 +153,43 @@ $text: $black !default;
 $text-invert: findColorInvert($text) !default;
 $text-light: $white !default;
 $text-strong: $black !default;
+
+.has-text-color-white
+{
+  color:$white !important;
+}
+.has-text-color-black
+{
+  color:$black !important;
+}
+.has-text-color-dark
+{
+  color:$grey-dark!important;
+}
+.has-text-color-grey
+{
+  color:$grey !important;
+}
+.has-text-color-yellow
+{
+  color:$yellow !important;
+}
+.has-text-color-orange
+{
+  color:$orange !important;
+}
+.has-text-color-red
+{
+  color:$red !important;
+}
+// # primary text color
+
+.has-text-color-,
+.has-text-color-default,
+.has-text-color-primary
+{
+  color:$primary;
+}
 
 
 
@@ -137,8 +220,10 @@ $y_stripe_red:url(/img/y-red-24x1.svg);
 $y_stripe_orange:url(/img/y-orange-24x1.svg);
 .left_stripe_orange{background-image:$y_stripe_orange;background-repeat: repeat-y;}
 
+
 $y_stripe_roy:url(/img/y-roy-24x1.svg);
 .left_stripe_roy{background-image:$y_stripe_roy;background-repeat: repeat-y;}
+/*
 $y_stripe_oyw:url(/img/y-oyw-24x1.svg);
 .left_stripe_oyw{background-image:$y_stripe_oyw;background-repeat: repeat-y;}
 $y_stripe_ywr:url(/img/y-ywr-24x1.svg);
@@ -175,3 +260,4 @@ $y_stripe_oro:url(/img/y-oro-24x1.svg);
 .left_stripe_oro{background-image:$y_stripe_oro;background-repeat: repeat-y;}
 $y_stripe_owo:url(/img/y-owo-24x1.svg);
 .left_stripe_owo{background-image:$y_stripe_owo;background-repeat: repeat-y;}
+*/

@@ -2,7 +2,7 @@
 @import 'navbar';
 @import 'sections';
 @import '../../node_modules/bulma';
-@import "imports/fullpage";
+
 @import "font-awesome";
 *{ box-sizing: border-box; list-style:none; scroll-behavior: smooth;}
 html::-webkit-scrollbar {display: none!important; scrollbar-width: none!important;}
@@ -47,25 +47,57 @@ section, article{
 
 }
 
+/*
+.section {
+ padding:0; }
+
+@media screen and (min-width: 1024px) {
+   .section.is-medium {
+     padding:0; }
+   .section.is-large {
+     padding: 0; } }
+*/
+
+//main {height:100%;max-width:100vw!important;padding-top: $navbar-height;}
+.interline{height:2vh;width:100vw;padding:0;margin:0;}
+
 .gradient-backdrop {
  background-image:linear-gradient($red,$orange,$yellow,transparent);
+ //margin-top:40px;
+ //padding:0 10px 0 10px;
  background-attachment:fixed;
  background-size:cover;
+ //height:100%
 }
 .is-active {
  display:initial
 }
 .gradient-backdrop h1 {
- //line-height:50px;
  color:black;
  mix-blend-mode:lighten;
  background-color:white;
- //font-size:45px;
- //font-weight:600;
- //padding-bottom:40px
 }
-
-
+/*
+.gradient-backdrop p {
+ color:black;
+}
+*/
+/*
+@media (max-width: 960px) {
+ .gradient-backdrop h1,
+ .gradient-backdrop p {
+  text-align:center;
+  line-height:55px
+ }
+}
+.gradient-backdrop img {
+ display:block;
+ padding-left:35px;
+ margin-left:auto;
+ margin-right:auto;
+ width:100%
+}
+*/
 .title, h1{
 text-transform: uppercase;
 //  letter-spacing: -.2rem;
@@ -95,7 +127,20 @@ h2{
    font-style: normal;
    line-height: $size-3;
  }
+p {
+  font-family: $family-alt;
+  font-size: $size-6;
+  font-style: normal;
+  line-height: $size-3;
+}
 
+.pad,
+.pad1{padding:$block-spacing/3!important;}
+.pad1x{padding-left:$block-spacing/3!important;padding-right:$block-spacing/3!important;}
+.pad1y{padding-top:$block-spacing/3!important;padding-bottom:$block-spacing/3!important;}
+.pad2{padding:$block-spacing !important;}
+.pad2x{padding-left:$block-spacing !important;padding-right:$block-spacing!important;}
+.pad2y{padding-top:$block-spacing !important;padding-bottom:$block-spacing !important;}
 
 .preloader {
   align-items: center;

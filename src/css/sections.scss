@@ -1,185 +1,339 @@
-
-//section commons
-
-.hero-body{
-  height:100%;
+.container-fixed
+{
+  margin-left:$gap;
+}
+.hero
+{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  white-space:initial;
+  max-width:100vw!important;
+  height:100%!important;
+  margin:0!important;
+  padding-top:0!important;
+  padding-right:0!important;
+  padding-left:0!important;
+  padding-bottom:0!important;
+  overflow-x : hidden;
+}
+.hero-body,
+.hero-head
+{
+  padding-top:$navbar-height*2!important;
+  padding-right:$gap/2!important;
+  padding-left:$gap/2!important;
+  padding-bottom:$navbar-height*2!important;
+  margin:0 0 0 0;
+  z-index:20!important;
+}
+.hero-body
+{
+  //min-height: 100vh;
   width: 100%;
-  //margin-top:120px;
-  margin: 0;
-
-  padding-top: 8px ;
-  padding-left: 32px!important;
-  padding-right: 8px!important;
-  padding-bottom: 8px!important;
-  -webkit-box-flex: 1;
-  flex-grow: 0;
-  flex-shrink: 1;
   background-repeat: repeat-y;
-  .container{margin-top:54px;padding: 8px;}
 }
 
-.parallax{
-  height:100vh!important;
+.hero-image
+{
+  padding-bottom: 0!important;
+  z-index:18!important;
+  position:absolute!important;
+  width:100%!important;
+  bottom:0;
+  overflow-y: hidden;
 }
 
-.parallax.parallax-white,
-.parallax.parallax-black,
-.parallax.parallax-orange,
-.parallax.parallax-yellow,
-.parallax.parallax-red{
+.hero-parallax
+{
+  padding-right:0!important;
+  padding-left:0!important;
+  height: 100%;
+//  margin-left: -8px;
+//  margin-right: -18px;
+  margin-bottom:0;
+  padding-top:$navbar-height * 2 ;
+  padding-right: 0!important;
+  padding-bottom: $navbar-height!important;
+  background-attachment:fixed;
+  background-position: center;
+  background-size:cover;
+//  -webkit-clip-path:polygon(0 100%, 0 0%, 100% 20%, 100% 100%);
+//  clip-path:polygon(0 100%, 0 0%, 100% 20%, 100% 100%);
+  z-index:-1;
+}
+.parallax-container{
+  margin-top: $navbar-height;
+  margin-bottom: $navbar-height;
+  z-index:10;
+  -webkit-clip-path:polygon(0 90%, 0 10%, 100% 20%, 100% 80%);
+  clip-path:polygon(0 90%, 0 10%, 100% 20%, 100% 80%);
+  .container{
+    padding: $navbar-height;
+  }
+}
+.parallax-container.parallax-white,
+.parallax-container.parallax-black,
+.parallax-container.parallax-orange,
+.parallax-container.parallax-yellow,
+.parallax-container.parallax-red{
   background-repeat: repeat;
   width:100%;
 }
-
-.parallax-white{background-color:$white-alpha;background-image:$xy_lines_FFF;}
-.parallax-black{background-color:$black-alpha-half;background-image:$xy_lines_000;}
-.parallax-orange{background-color:$orange-alpha;}
-.parallax-yellow{background-color:$yellow-alpha;background-image:$xy_lines_FFF;}
-.parallax-red{background-color:$red-alpha;}
-
-.parallax-body {
-  height: 100%;
-
-  -webkit-box-flex: 1;
-  flex-grow: 1;
-  flex-shrink: 0;
-  background-repeat: repeat-y;
-  -webkit-clip-path:polygon(0 100%, 0 10%, 100% 20%, 100% 95%);
-  clip-path:polygon(0 100%, 0 $navbar-height, 100% 20%, 100% 95%);
-  z-index:-1;
-  .img-parallax{
-    z-index:10;
-    position: absolute;
-    min-height:100vh!important;
-    width: 1600px;
-    max-width: 100%;
-    background-size: cover;
-  }
-
-}
-.parallax-container{
-  position:fixed;
-  display: block;
-  margin-top:25%;
-  padding:8px;
-  //top:30%;
-  justify-content: center;
-  z-index: 12;
-  -webkit-clip-path:polygon(0 100%, 0 0%, 100% 5%, 100% 90%);
-    clip-path:polygon(0 100%, 0 0%, 100% 5%, 100% 90%);
-
-}
-
 /*
-
-.container-white,
-.container-white,
-.container-white,
-.container-white,
-.container-black,
+.parallax-container.parallax-white{background-color:$white-alpha;background-image:$xy_lines_FFF;}
+.parallax-container.parallax-black{background-color:$black-alpha-half;background-image:$xy_lines_000;}
+.parallax-container.parallax-orange{background-color:$orange-alpha;}
+.parallax-container.parallax-yellow{background-color:$yellow-alpha;background-image:$xy_lines_FFF;}
+.parallax-container.parallax-red{background-color:$red-alpha;}
 */
-.container-white,
 .section-color-default,
 .section-color-white,
 .footer-color-white,
 .footer-color-default{
-
   .content,.title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $black;}
   .button{background-color: $black;color: $white;}
   .button:focus,.button:hover{background-color: $white;color: $black;border-color: $black;background-image:$y_stripe_roy;background-repeat: repeat-y;}
-
-
+  .hero-body{background-color:$alpha-white;}
   a{color: $red;}a:hover{color: $orange;}a:focus{color: $orange;}
   hr{background-color: $black};
   code{background-color: $yellow;}
   pre{background-color: $white;}
   color: $black;
-
-  //
-
-}
-.hero-body-white,
-.container-white{
-  background-color:$white-alpha;
-}
-.hero-body-black,
-.container-black{
-  background-color:$black-alpha;
-}
-.hero-body-orange,
-.container-orange{
-  background-color:$orange-alpha;
-}
-.hero-body-yellow,
-.container-yellow{
-  background-color:$yellow-alpha;
-}
-.hero-body-red,
-.container-red{
-  background-color:$red-alpha;
+  background-color: $white;
 }
 
-.section-color-default,
-.section-color-white,
-.footer-color-white,
-.footer-color-default{background-color: $white;}
-.section-color-black,
-.footer-color-black{background-color: $black;}
-.section-color-orange,
-.footer-color-orange{background-color: $orange;}
+
+// #
+// # yellow section style :
+// #
 .section-color-yellow,
-.footer-color-yellow{background-color: $yellow;}
-.section-color-red,
-.footer-color-red{background-color: $red;}
-
-.section-color-orange,
-.section-color-primary,
-.footer-color-orange,
-.footer-color-primary{
-  .content,.title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $black;}
-  .button{background-color: transparent;color: $black;border-color: $black;}
-  .button:focus,.button:hover{background-color: $black;color: $white;border-color: $black;}
-  /*
-  .hero-body{
-    background-color:$orange-alpha;
-  }
-  */
-  a{color: $red;}a:focus,a:hover{color: $white;}
-  hr{background-color: $black};
-  code,pre{background-color: $white;}
-  color: $white;
+.footer-color-yellow
+{
+  background-color: $yellow;
 }
-
-.section-color-yellow,.footer-color-yellow{
-  .content,.title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $black;}
-  .button{background-color: transparent;color: $black;border-color: $black;}
-  .button:focus,.button:hover{background-color: $white;color: $black;border-color: $black;}
-  //.hero-body{background-color:$yellow-alpha; }
-  a{color: $red;}a:focus,a:hover{color: $orange;}
-  hr{background-color: $black};
+// # yellow boxes style :
+.hero-body-yellow,
+.container-yellow
+{
+  background-color:$alpha-yellow;
+  //backdrop-filter: $backdrop-alpha;
+}
+//inside a yellow box
+.hero-body-yellow,
+.container-yellow,
+.section-color-yellow,
+.footer-color-yellow
+{
+  // typo colors
+  h1,
+  h2,
+  h3,
+  .title,
+  .subtitle
+  {color:$black;}
+  h4,
+  h5,
+  h6,
+  strong,
+  p
+  {color:$grey-darker;}
+  a
+  {color: $red;}
+  a:active,a:focus,a:hover
+  {color: $orange;}
+  // fa-icons styles
+  .fa
+  {color: $red;}
+  .fa:active,.fa:focus,.fa:hover
+  {color: $orange;}
+  .fa.fa-3x
+  {color: $orange;}
+  .fa.fa-3x:active,
+  .fa.fa-3x:focus,
+  .fa.fa-3x:hover
+  {color: $grey-darker;}
+  // buttons
+  .button
+  {
+    background-color: $yellow;
+    color: $black;
+    .fa //fa inside button
+    {color: $black;}
+  }
+  .button:active,.button:focus,.button:hover
+  {
+    background-color: $black;
+    color: $yellow;
+    .fa //fa inside button
+    {color: $yellow;}
+  }
+  hr
+  {background-color: $black}
   code,pre{background-color: $white;}
   color: $black;
 }
 
-.section-color-red,.footer-color-red{
-  .title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $white;}
-  .button{background-color: $red;color: $white;}
-  .button:focus,.button:hover{background-color: $red;color: $black;border-color: $black;}
-  //.hero-body{background-color:$red-alpha;}
-  a{color: $black;}
-  hr{background-color: $orange};
+// #
+// # orange section style :
+// #
+.section-color-orange,
+.footer-color-orange
+{
+  background-color: $orange;
+}
+// # orange boxes style :
+.hero-body-orange,
+.container-orange
+{
+  background-color:$alpha-orange;
+  //backdrop-filter: $backdrop-alpha;
+}
+//inside a yellow box
+.hero-body-orange,
+.container-orange,
+.section-color-orange,
+.footer-color-orange
+{
+  // typo colors
+  h1,
+  h2,
+  h3,
+  .title,
+  .subtitle
+  {color:$black;}
+  h4,
+  h5,
+  h6,
+  strong,
+  p
+  {color:$grey-darker;}
+  a
+  {color: $red;}
+  a:active,a:focus,a:hover
+  {color: $orange;}
+  // fa-icons styles
+  .fa
+  {color: $red;}
+  .fa:active,.fa:focus,.fa:hover
+  {color: $orange;}
+  .fa.fa-3x
+  {color: $orange;}
+  .fa.fa-3x:active,
+  .fa.fa-3x:focus,
+  .fa.fa-3x:hover
+  {color: $grey-darker;}
+  // buttons
+  .button
+  {
+    background-color: $orange;
+    color: $black;
+    .fa //fa inside button
+    {color: $black;}
+  }
+  .button:active,.button:focus,.button:hover
+  {
+    background-color: $black;
+    color: $orange;
+    .fa //fa inside button
+    {color: $orange;}
+  }
+  hr
+  {background-color: $black}
   code,pre{background-color: $white;}
-  color: $white;
+  color: $black;
+}
+
+// #
+// # red section style :
+// #
+.section-color-red,
+.footer-color-red,
+{
+   background-color: $red;
+}
+// # red boxes style :
+.hero-body-red,
+.container-red
+{
+  background-color:$alpha-red;
+  //backdrop-filter: $backdrop-alpha;
+}
+//inside a red box
+//
+.hero-body-red,
+.container-red,
+.section-color-red,
+.footer-color-red
+{ // typo colors
+  h1,h2,h3,.title,.subtitle
+  {
+    color:$yellow;
+  }
+  h4,h5,h6,strong,p,hr
+  {
+    color:$white;
+  }
+  a
+  {
+    color: $yellow;
+  }
+  a:active,a:focus,a:hover
+  {
+    color: $orange;
+  }
+  // fa-icons styles
+  .fa
+  {
+    color: $yellow;
+  }
+  .fa:active,.fa:focus,.fa:hover
+  {
+    color: $orange;
+  }
+  .fa.fa-3x
+  {
+    color: $white;
+  }
+  .fa.fa-3x:active, .fa.fa-3x:focus, .fa.fa-3x:hover
+  {
+    color: $yellow;
+  }
+  // buttons
+  .button
+  {
+    background-color: $red;
+    color: $white;
+    .fa //fa inside button
+    {color: $yellow;}
+  }
+  .button:active,.button:focus,.button:hover
+  {
+    background-color: $white;
+    color: $red;
+    .fa //fa inside button
+    {color: $yellow;}
+  }
+  code
+  {
+    background-color: $yellow;
+  }
+  pre
+  {
+    background-color: $white;
+  }
+  color:$white;
 }
 
 .section-color-black,.footer-color-black{
   .content,.title,.subtitle,.button,h1,h2,h3,h4,h5,h6,strong,p{color: $white;}
-  .button{background-color: $black;color: $white;}
+  .button{color: $white;}
+  .button{background-color: $white;color: $black;}
   .button:focus,.button:hover{background-color: $black;color: $yellow;border-color: $yellow;}
-  //.hero-body{background-color:$black-alpha;}
+  .hero-body{background-color:$alpha-black;}
   a{color: $red;}
   a:hover{color: $yellow;}
   hr{background-color: $orange};
   code,pre{background-color: $white;}
   color: $white;
+  background-color: $black;
 }

@@ -1,20 +1,19 @@
 ---
-title: 'tech'
+title: 'Portfolio'
 date: 2019-11-14T19:02:50-07:00
 draft: false
 
-navbar_color: "white"
-navbar_left_stripe: "orange"
+navbar_color: "orange"
+navbar_left_stripe: "red"
 
 page_color: "white"
 page_left_stripe: "black"
-page_background_image: "cassette_tape_bw"
+page_background_image: "cassette_tape_bw.png"
 
 footer_color: "black"
 footer_left_stripe: "red"
 
 ---
-
 
 # Victor Hugo
 

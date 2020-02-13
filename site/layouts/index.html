@@ -1,17 +1,308 @@
 {{ define "main" }}
-<div id="myFullpage">
 
-{{ partial "homepage_01" . }}
-{{ partial "homepage_02" . }}
-{{ partial "homepage_03" . }}
-{{ partial "homepage_04" . }}
-{{ partial "homepage_05" . }}
-</div>
-<style media="screen">
-  footer, .footer{
-    width:0!important;
-    height:0!important;
-    visibility:hidden!important;
-  }
-</style>
+<section  class="section hero section-color-black"  >
+  <div class=" hero-body hero-body-black  is-paddingless">
+
+    <div class="hero-parallax  parallax" style="background-image: url(images/vinyl_playing_bw.jpg);background-size:cover; height:50vh    "><div class=" parallax-container parallax-black" > </div> </div>
+
+    <div class="container is-fluid is-fullheight pad2y  is-fullwidth" style="min-height:50vh ;">
+      <div class="container is-fluid  ">
+        <div class="columns is-marginless is-paddingless  is-centered is-vcentered has-text-centered">
+
+          <div class="column is-9">
+            <figure class="is-square has-text-centered  " style="padding:16px">
+              <h3 class="subtitle " >
+              New Vinyl
+              <a href="{{ "/" | relURL }}"> Arrivals & Re-Stock</a>
+            </h3>
+             <p class="">
+              Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus.
+              Check out our <a href="{{ "/" | relURL }}">New Vinyl Arrivals & Re-Stock</a>
+            </p>
+        </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-parallax  parallax   " style="background-image: url(images/vinyl_playing_hq_bw.jpg);background-size:cover; height:100vh  ">
+    </div>
+  </div>
+</section>
+
+<section class="hero is-fullheight section section-color-white left_stripe_roy ">
+  <div class=" hero-body hero-body-white  is-paddingless left_stripe_roy">
+    <div class="container is-fluid is-fullheight is-fullwidth" style="padding-top :4rem;">
+      <div class="columns is-marginless is-paddingless  is-centered is-vcentered ">
+        <div class="column is-4">
+          <figure class="lined_black is-square has-text-centered" style="padding:16px">
+            <img class="" src="images/k7.png" alt="">
+          </figure>
+          <br>
+          <h3 class="subtitle " >
+            h3 class = subtitle, <a href="{{ "/about" | relURL }}">this is a link</a>...
+          </h3>
+          <p class="">
+            Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus.
+            <a href="{{ "/about" | relURL }}">This is a link</a>...
+          </p>
+        </div>
+        <div class="column is-4">
+          <figure class="lined_black is-square has-text-centered" style="padding:16px">
+            <img class="" src="images/k7.png" alt="">
+          </figure>
+          <br>
+          <h3 class="subtitle " >
+            h3 class = subtitle, <a href="{{ "/about" | relURL }}">this is a link</a>...
+          </h3>
+          <p class="">
+            Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus.
+            <a href="{{ "/about" | relURL }}">This is a link</a>...
+          </p>
+        </div>
+        <div class="column is-4">
+          <figure class="lined_black is-square has-text-centered" style="padding:16px">
+            <img class="" src="images/k7.png" alt="">
+          </figure>
+          <br>
+          <h3 class="subtitle " >
+            h3 class = subtitle, <a href="{{ "/about" | relURL }}">this is a link</a>...
+          </h3>
+          <p class="">
+            Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus.
+            <a href="{{ "/about" | relURL }}">This is a link</a>...
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="is-paddingless " src="img/hatch-bottom-yellow.svg" width="100%" height="100%" >
+</section>
+<section class="hero section section-color-yellow  ">
+  <div class="hero-body hero-body-yellow" >
+    <div class="container is-marginless is-paddingless has-text-left  " style="padding-top:8rem;">
+      <div class="columns is-marginless is-paddingless  is-centered is-vcentered ">
+        <div class="column is-one-quarter">
+          <figure class="lined_black" style="padding:16px">
+             <img  src="images/bg-img-home-yellow.png" alt="">
+          </figure>
+        </div>
+        <div class="column is-three-quarters ">
+          <h1 class="title">
+            h1 class = title
+          </h1>
+          <h3 class="subtitle " >
+            h3 class = subtitle, <a href="{{ "/about" | relURL }}">this is a link</a>...
+          </h3>
+          <div class="container  ">
+            <p class="">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              <a href="{{ "/about" | relURL }}">This is a link</a>...
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img class="is-paddingless " src="img/hatch-bottom-orange.svg" width="100%" height="100%" >
+</section>
+<section class="hero is-fullheight section section-color-orange " >
+  <div class="hero-body hero-body-orange  " >
+    <div class="container has-text-left ">
+        <div class="content">
+          <div class="columns is-centered is-vcentered">
+            <div class="column  is-3">
+              <figure class="">
+                <img class="image" src="images/cassette_tape_bw.png">
+              </figure>
+            </div>
+            <div class="column is-9">
+              <h1 class="title">
+                h1 class = title
+              </h1>
+              <h3 class="subtitle " >
+                h3 class = subtitle, <a href="{{ "/about" | relURL }}">this is a link</a>...
+              </h3>
+                <p class="">
+                  Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus.
+                  <a href="{{ "/about" | relURL }}">This is a link</a>...
+                </p>
+                <div class="is-pulled-right">
+                  <a class="button has-text-uppercase" type="button" name="button" href="{{ "/" | relURL }}"> <i class="fa fa-lg fa-arrow-right"></i> Button </a>
+                </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <img class="is-paddingless " src="img/hatch-bottom-red.svg" width="100%" height="100%" >
+
+
+</section>
+<section class="hero is-fullheight section section-color-red" >
+  <div class="hero-body hero-body-red is-fullheight is-paddingless " >
+    <div class="container is-fixed is-fluid has-text-centered is-fullheight">
+
+        <div class="content">
+          <div class="columns is-centered is-vcentered">
+            <div class="column is-6">
+                <h1 class="title is-1">
+                  h1 class = title is-1
+                </h1>
+                <hr>
+                <h3 class="subtitle is-uppercase">
+                    h3 class = subtitle is-uppercase <a href="{{ "/" | relURL }}">This is a link.</a>
+                </h3>
+                <br>
+                <a class="button" href="{{ "/" | relURL }}">button</a>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+<!--  <img class="is-paddingless " src="img/hatch-bottom-black.svg" width="100%" height="100%" >-->
+</section>
+<section  class="section hero section-color-black"  >
+  <div class=" hero-body hero-body-black  is-paddingless">
+
+    <div class="hero-parallax  parallax" style="background-image: url(images/vinyl_playing_bw.jpg);background-size:cover; height:50vh    ">
+      <div class=" parallax-container parallax-yellow" >
+        <div class="container is-fluid has-text-centered ">
+          <div class="content">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container is-fluid is-fullheight is-paddingless is-fullwidth" style=" ;">
+      <div class="container is-fluid  ">
+          <div class="columns is-marginless is-paddingless  is-centered is-vcentered ">
+            <div class="column is-one-quarter">
+              <figure class="lined_black" style="padding:16px">
+                 <img  src="images/rca-orange.jpg" alt="">
+              </figure>
+            </div>
+            <div class="column is-three-quarters ">
+              <!--
+              <h1 class="title">
+                h1 class = title
+              </h1>
+              -->
+              <h1 class="subtitle " >
+                h1 class = subtitle, <a href="{{ "/about" | relURL }}">this is a link</a>...
+              </h1>
+              <div class="container  ">
+                <p class="">
+                  Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus.
+                  <a href="{{ "/about" | relURL }}">This is a link</a>...
+                </p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    <div class="hero-parallax  parallax   " style="background-image: url(images/vinyl_playing_bw.jpg);background-size:cover; height:100vh  ">
+
+    </div>
+  </div>
+
+</section>
+
+
+<section class="hero is-fullheight section section-color-white left_stripe_roy ">
+  <div class="hero-body hero-body-white left_stripe_roy" >
+    <div class="container is-marginless is-paddingless has-text-left  ">
+      <div class="columns is-centered">
+        <div class="column is-9">
+          <h1 class="title is-3">h1 class = title is-1</h1>
+          <hr>
+          <h3 class="subtitle is-5 is-uppercase">
+              h3 class = subtitle is-uppercase <a href="{{ "/" | relURL }}">This is a link.</a>
+          </h3>
+          <br>
+          <a class="button" href="{{ "/" | relURL }}">button</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section  class="section hero section-color-black"  >
+  <div class=" hero-body hero-body-red  is-paddingless">
+
+    <div class="hero-parallax  parallax" style="background-image: url(images/vinyl_playing_bw.jpg);background-size:cover; height:50vh    ">
+      <div class=" parallax-container parallax-yellow" >
+        <div class="container is-fluid has-text-centered ">
+          <div class="content">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container is-fluid is-fullheight is-paddingless is-fullwidth" style=" ;">
+      <div class="container is-fluid  ">
+          <div class="columns is-marginless is-paddingless  is-centered is-vcentered ">
+            <div class="column is-one-quarter">
+              <figure class="lined_black" style="padding:16px">
+                 <img  src="images/rca-orange.jpg" alt="">
+              </figure>
+            </div>
+            <div class="column is-three-quarters ">
+              <h1 class="title">
+                h1 class = title
+              </h1>
+              <h3 class="subtitle " >
+                h3 class = subtitle, <a href="{{ "/about" | relURL }}">this is a link</a>...
+              </h3>
+              <div class="container  ">
+                <p class="">
+                  Phasellus porttitor enim id metus volutpat ultricies. Ut nisi nunc, blandit sed dapibus at, vestibulum in felis. Etiam iaculis lorem ac nibh bibendum rhoncus.
+                  <a href="{{ "/about" | relURL }}">This is a link</a>...
+                </p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+    <div class="hero-parallax  parallax   " style="background-image: url(images/vinyl_playing_bw.jpg);background-size:cover; height:100vh  ">
+
+    </div>
+  </div>
+
+</section>
+
+
+
+<section class="hero is-fullheight section section-color-white left_stripe_roy ">
+  <div class="hero-body hero-body-white left_stripe_roy is-fullheight" >
+    <div class="container pad2x has-text-left  " style="margin-left:24px">
+      <div class="columns is-centered">
+        <div class="column is-6">
+          <!--
+          <h1 class="title is-3">h1 class = title is-1</h1>
+          <hr>
+          <a class="button" href="{{ "/" | relURL }}">button</a>
+
+          -->
+          <h1 class="subtitle is-5 is-uppercase">
+              h1 class = subtitle is-uppercase <a href="{{ "/" | relURL }}">This is a link.</a>
+          </h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <a href="{{ "/about" | relURL }}">This is a link</a>...
+          </p>
+
+        </div>
+        <div class="column is-5">
+          <figure>
+            <img src="images/vinyl_playing_bw.jpg" alt="">
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
 {{ end }}
