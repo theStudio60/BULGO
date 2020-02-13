@@ -191,7 +191,12 @@ $text-strong: $black !default;
   color:$primary;
 }
 
-
+.button
+{
+  border-width: 0px!important;
+  text-transform: uppercase;
+  font-family: $family-serif;
+}
 
 $xy_lines_000:url( /img/xy_lines_black.png); //black
 $y_lines_000:url( /img/y_lines_black_24x100.png); //black
