@@ -33,19 +33,7 @@ body{
   justify-content: center;
 }
 
-section, article{
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  white-space:initial;
-  max-width:100vw!important;
-  min-height:100vh!important;
-  height:100%!important;
-  margin:0!important;
-   padding:0!important;
-  overflow-x : hidden;
-  overflow-y : scroll;
 
-}
 
 /*
 .section {
