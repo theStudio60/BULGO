@@ -90,7 +90,7 @@ $alpha-primary:$alpha-white;
 $backdrop-alpha: blur(30px)   ;
 .has-background-alpha
 {
-  backdrop-filter:$backdrop-alpha;
+  backdrop-filter:blur(10px);
 }
 
 /*
@@ -197,7 +197,7 @@ $text-strong: $black !default;
   text-transform: uppercase;
   font-family: $family-serif;
 }
-
+.left_stripe{margin-left:24px!important;}
 $xy_lines_000:url( /img/xy_lines_black.png); //black
 $y_lines_000:url( /img/y_lines_black_24x100.png); //black
 .lined_black{background-image:$xy_lines_000;background-repeat: repeat;width:100%;}

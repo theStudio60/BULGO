@@ -255,7 +255,7 @@ section, article{
   a
   {color: $red;}
   a:active,a:focus,a:hover
-  {color: $grey;}
+  {color: $orange;}
   // fa-icons styles
   .fa
   {color: $red;}
@@ -318,7 +318,7 @@ section, article{
   h3,
   .title,
   .subtitle
-  {color:$grey-darker;}
+  {color:$black;}
   h4,
   h5,
   h6,
@@ -469,10 +469,11 @@ section, article{
 .section-color-black,
 .footer-color-black
 { // typo colors
-  h1,h2,h3,.title,.subtitle
+  h1,.title
   {
-    color:$red;
+    color:$white;
   }
+  h2,h3,.subtitle,
   h4,h5,h6,strong,p,hr
   {
     color:$white;

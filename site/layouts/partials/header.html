@@ -2,26 +2,35 @@
 {{ $navbar_color := .Params.navbar_color }}
 {{ $navbar_left_stripe := .Params.navbar_left_stripe }}
 
-<nav class="navbar has-shadow is-fixed-top navbar-color-{{ $navbar_color }} left_stripe_{{ $navbar_left_stripe }}" role="navigation" aria-label="main-navigation"  >
-  <div class="container ">
-    <div class="navbar-brand " >
-      <a class="navbar-item navbar-brand-logo is-uppercase" href="{{.Site.BaseURL | absURL }}">
-        <i class="fa fa-asterisk fa-spin" ></i>
-        <h1 class="">{{ .Site.Title }}</h1>
-      </a>
-      <a  style="background-color:{{ $navbar_color }}" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-          <!--<span class="fa  fa-arrow"></span>-->
-      </a>
-      </div>
-    <div id="navbarMenu" class="navbar-menu ">
-      <div class="navbar-end has-text-centered is-vcentered">
-        <a  class="navbar-item navbar-menu-entry" href="{{ "/" | absURL }}">
 
-          home
-        </a>
+<nav
+ id="header"
+ class="navbar has-shadow is-fixed-top navbar-color-{{ $navbar_color }} left_stripe_{{ $navbar_left_stripe }} "
+ role="navigation"
+ aria-label="main-navigation"
+ style="background-image:url(img/hatch-bottom-black.svg);background-repeat:no-repeat"
+ >
+
+  <div class="container " >
+    <a   role="button" class="navbar-burger burger is-pulled-left" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+        <!--<span class="fa  fa-arrow"></span>-->
+    </a>
+    <div class="navbar-brand " >
+
+      <a class="navbar-item navbar-brand-logo is-uppercase" href="{{.Site.BaseURL | absURL }}" id="headerTitle">
+        <i class="fa fa-asterisk fa-spin" ></i>
+     {{ .Site.Title }} 
+
+      </a>
+
+
+      </div>
+    <div id="navbarMenu" class="navbar-menu " >
+      <div class="navbar-end has-text-centered is-vcentered">
+<!--
         <a  class="navbar-item navbar-menu-entry" href="{{ "/about" | absURL }}">
 
           about
@@ -38,6 +47,13 @@
 
           contact
         </a>
+-->
+           <p  class="navbar-item navbar-menu-entry" href="{{ "/" | absURL }}">
+           <a href="#" class="pad1x"><span class="fa fa-2x fa-facebook-official"></span></a>
+           <a href="#" class="pad1x"><span class="fa fa-2x fa-twitter"></span></a>
+           <a href="#" class="pad1x"><span class="fa fa-2x fa-youtube"></span></a>
+
+           </p>
       </div>
     </div>
   </div>
@@ -91,6 +107,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var $target = document.getElementById(target);
             $el.classList.toggle('is-active');
             $target.classList.toggle('is-active');
+
           });
         });
       }
@@ -102,4 +119,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 </script>
+
 {{ "<!-- header End -->" | safeHTML }}
