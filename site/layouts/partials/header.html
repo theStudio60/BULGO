@@ -5,32 +5,37 @@
 
 <nav
  id="header"
- class="navbar has-shadow is-fixed-top navbar-color-{{ $navbar_color }} left_stripe_{{ $navbar_left_stripe }} "
+ class="navbar has-shadow is-fixed-top navbar-color-{{ $navbar_color }}"
  role="navigation"
  aria-label="main-navigation"
- style="background-image:url(img/hatch-bottom-black.svg);background-repeat:no-repeat"
+ style=" max-height:64px"
  >
-
-  <div class="container " >
-    <a   role="button" class="navbar-burger burger is-pulled-left" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-        <!--<span class="fa  fa-arrow"></span>-->
-    </a>
-    <div class="navbar-brand " >
-
-      <a class="navbar-item navbar-brand-logo is-uppercase" href="{{.Site.BaseURL | absURL }}" id="headerTitle">
-        <i class="fa fa-asterisk fa-spin" ></i>
-     {{ .Site.Title }} 
-
+  <div
+   class="container is-fluid is-paddingless"
+   style="background-image:url(img/hatch-bottom-white.svg);background-repeat:no-repeat;max-height:64px"
+  >
+  <div class="navbar-brand pad1x pad1y">
+    <a
+       class="navbar-brand-logo is-uppercase is-pulled-left"
+       href="{{.Site.BaseURL | absURL }}"
+       id="headerTitle"
+      >
+        <!--<i class="fa fa-asterisk fa-spin" ></i>-->
+        <!--
+        <h1 class="navbar-item pad2x is-size-5 is-pulled-left ">{{ .Site.Title }}</h1>
+        -->
+      <img src=" {{ .Site.Params.logo }}" alt="" height=" " style="max-height:40px;">
       </a>
-
-
+      <a  style="background-color:{{ $navbar_color }}" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+          <!--<span class="fa  fa-arrow"></span>-->
+      </a>
       </div>
-    <div id="navbarMenu" class="navbar-menu " >
+
+    <div id="navbarMenu" class="navbar-menu ">
       <div class="navbar-end has-text-centered is-vcentered">
-<!--
         <a  class="navbar-item navbar-menu-entry" href="{{ "/about" | absURL }}">
 
           about
@@ -47,7 +52,6 @@
 
           contact
         </a>
--->
            <p  class="navbar-item navbar-menu-entry" href="{{ "/" | absURL }}">
            <a href="#" class="pad1x"><span class="fa fa-2x fa-facebook-official"></span></a>
            <a href="#" class="pad1x"><span class="fa fa-2x fa-twitter"></span></a>
@@ -119,5 +123,4 @@ document.addEventListener('DOMContentLoaded', function () {
       }
     });
 </script>
-
 {{ "<!-- header End -->" | safeHTML }}
