@@ -1,24 +1,103 @@
 {{ $footer_color := .Params.footer_color }}
 {{ $footer_left_stripe := .Params.footer_left_stripe }}
-
-<footer class="footer footer-color-{{ $footer_color }}  left_stripe_{{ $footer_left_stripe }} ">
+<footer class="footer footer-color-{{ $footer_color }} {{ $footer_color }} left_stripe_{{ $footer_left_stripe }} ">
   <div class="footer-body">
+    <div class="container " style="margin-left:24px;">
+      <div class="columns is-centered">
+        <div class="column is-6 pad2 ">
+      <div class="field">
+        <label class="label">Name</label>
+        <div class="control">
+          <input class="input" type="text" placeholder="Text input">
+        </div>
+      </div>
 
+      <div class="field">
+        <label class="label">Username</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-success" type="text" placeholder="Text input" value="bulma">
+          <span class="icon is-small is-left">
+            <i class="fa fa-lg fa-user"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fa fa-lg fa-check"></i>
+          </span>
+        </div>
+        <p class="help is-success">This username is available</p>
+      </div>
 
-  <div class="container">
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input is-danger" type="email" placeholder="Email input" value="hello@">
+          <span class="icon is-small is-left">
+            <i class="fa fa-lg fa-envelope"></i>
+          </span>
+          <span class="icon is-small is-right">
+            <i class="fa fa-lg fa-exclamation-triangle"></i>
+          </span>
+        </div>
+        <p class="help is-danger">This email is invalid</p>
+      </div>
 
-  <div class="columns is-centered">
+      <div class="field">
+        <label class="label">Subject</label>
+        <div class="control">
+          <div class="select">
+            <select>
+              <option>Select dropdown</option>
+              <option>With options</option>
+            </select>
+          </div>
+        </div>
+      </div>
 
-  <div class="column is-12 is-pulled-right has-text-right">
-    <p class=" ">
-      &copy; {{ now.Format "2006"}} - {{ .Site.Params.company_name }} - {{ .Site.Params.copyright_note_en }}
-    <br>
-      <a>Terms of Service</a>&nbsp;-&nbsp;<a>Privacy Policy</a>
+      <div class="field">
+        <label class="label">Message</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea"></textarea>
+        </div>
+      </div>
 
-    </p>
+      <div class="field">
+        <div class="control">
+          <label class="checkbox">
+            <input type="checkbox">
+            I agree to the <a href="#">terms and conditions</a>
+          </label>
+        </div>
+      </div>
+
+      <div class="field">
+        <div class="control">
+          <label class="radio">
+            <input type="radio" name="question">
+            Yes
+          </label>
+          <label class="radio">
+            <input type="radio" name="question">
+            No
+          </label>
+        </div>
+      </div>
+
+      <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+        <div class="control">
+          <button class="button is-link is-light">Cancel</button>
+        </div>
+      </div>
+        </div>
+        <div class="column is-6 ">
+          <p class=" ">
+            &copy; {{ now.Format "2006"}} - {{ .Site.Params.company_name }} - {{ .Site.Params.copyright_note_en }}
+            <br>
+            <a>Terms of Service</a>&nbsp;-&nbsp;<a>Privacy Policy</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-
-  </div>
-  </div>
-</div>
 </footer>
