@@ -7,8 +7,8 @@
 {
   backdrop-filter: blur(20px);
   vertical-align: center;
-  -webkit-overflow-scrolling: touch;
-  height:100vh;
+  -webkit-overflow-scrolling:touch;
+  height:130vh;
   overflow: auto;
 }
 .navbar-menu-entry
@@ -18,11 +18,11 @@
 }
 .navbar-brand-logo
 {
-  position: absolute;
+  //position: absolute;
   height:$navbar-height;
-  left:24px!important;
-  align-items: left;
-  margin-left:0!important;
+  //left:24px!important;
+//  align-items: left;
+  //margin-left:0!important;
 }
 #navbarMenu
 {
@@ -48,8 +48,8 @@
   }
   a.navbar-item.navbar-menu-entry
   {
-    @extend .has-background-alpha-white;
-    color:$black;
+    //@extend .has-background-alpha-white;
+    color:$white;
   }
   .navbar-brand-logo,
   .navbar-burger.burger
