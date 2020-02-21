@@ -91,36 +91,41 @@ text-transform: uppercase;
 //  letter-spacing: -.2rem;
  font-size: $size-1;
 }
-h2{
+h2
+{
   letter-spacing: -.18rem;
     font-size: $size-2;
 
 }
-.subtitle , h3{
+.subtitle , h3
+{
      font-size: $size-3;
      letter-spacing: -.15rem;
  }
- h4{
+ h4
+ {
      font-size: $size-4;
  }
- h5{
+ h5
+ {
      font-size: $size-5;
  }
- h6{
+ h6
+ {
      font-size: $size-6;
  }
- p {
+ label,
+ textarea,
+ select,
+ option,
+ input,
+ p
+ {
    font-family: $family-alt;
    font-size: $size-6;
    font-style: normal;
    line-height: $size-3;
  }
-p {
-  font-family: $family-alt;
-  font-size: $size-6;
-  font-style: normal;
-  line-height: $size-3;
-}
 
 .pad,
 .pad1{padding:$block-spacing/3!important;}
