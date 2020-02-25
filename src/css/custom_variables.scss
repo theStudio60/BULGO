@@ -197,11 +197,51 @@ $text-strong: $black !default;
   text-transform: uppercase;
   font-family: $family-serif;
 }
+
+/*
+ Top & bottom triangles (parallelogram effect)
+ i use svg to create triangles
+
+ //$delta_top-:url( /img/delta-top-.svg); //
+ //$delta_bottom-:url( /img/delta-bottom-.svg); //
+*/
+.delta{
+  background-repeat:no-repeat;max-height:64px;
+}
+ //white
+$delta_top-white:url( /img/delta-top-white.svg);
+$delta_bottom-white:url( /img/delta-bottom-white.svg);
+.delta-top-white{background-image:$delta_top-white;}
+.delta-bottom-white{background-image:$delta_bottom-white;}
+ //black
+$delta_top-black:url( /img/delta-top-black.svg);
+$delta_bottom-black:url( /img/delta-bottom-black.svg);
+.delta-top-black{background-image:$delta_top-black;}
+.delta-bottom-black{background-image:$delta_bottom-black;}
+ //yellow
+$delta_top-yellow:url( /img/delta-top-yellow.svg);
+$delta_bottom-yellow:url( /img/delta-bottom-yellow.svg);
+.delta-top-yellow{background-image:$delta_top-yellow;}
+.delta-bottom-yellow{background-image:$delta_bottom-yellow;}
+ //orange
+$delta_top-orange:url( /img/delta-top-orange.svg);
+$delta_bottom-orange:url( /img/delta-bottom-orange.svg);
+.delta-top-orange{background-image:$delta_top-orange;}
+.delta-bottom-orange{background-image:$delta_bottom-orange;}
+ //red
+$delta_top-red:url( /img/delta-top-red.svg);
+$delta_bottom-red:url( /img/delta-bottom-red.svg);
+.delta-top-red{background-image:$delta_top-red;}
+.delta-bottom-red{background-image:$delta_bottom-red;}
+
+/* Left Stripes */
+
 .left_stripe{margin-left:24px!important;}
 $xy_lines_000:url( /img/xy_lines_black.png); //black
 $y_lines_000:url( /img/y_lines_black_24x100.png); //black
 .lined_black{background-image:$xy_lines_000;background-repeat: repeat;width:100%;}
-.left_stripe_black-lines{
+.left_stripe_black-lines
+{
   background-image:$y_lines_000;
   background-repeat: repeat-y;
 }
@@ -209,7 +249,8 @@ $y_lines_000:url( /img/y_lines_black_24x100.png); //black
 $xy_lines_FFF:url( /img/xy_lines_white.png); //white
 $y_lines_FFF:url( /img/y_lines_white_24x100.png); //white
 .lined_white{background-image:$xy_lines_FFF;background-repeat: repeat; }
-.left_stripe_white-lines{
+.left_stripe_white-lines
+{
   background-image:$y_lines_FFF;
   background-repeat: repeat-y;
 }
@@ -224,45 +265,5 @@ $y_stripe_red:url(/img/y-red-24x1.svg);
 .left_stripe_red{background-image:$y_stripe_red;background-repeat: repeat-y;}
 $y_stripe_orange:url(/img/y-orange-24x1.svg);
 .left_stripe_orange{background-image:$y_stripe_orange;background-repeat: repeat-y;}
-
-
 $y_stripe_roy:url(/img/y-roy-24x1.svg);
 .left_stripe_roy{background-image:$y_stripe_roy;background-repeat: repeat-y;}
-/*
-$y_stripe_oyw:url(/img/y-oyw-24x1.svg);
-.left_stripe_oyw{background-image:$y_stripe_oyw;background-repeat: repeat-y;}
-$y_stripe_ywr:url(/img/y-ywr-24x1.svg);
-.left_stripe_ywr{background-image:$y_stripe_ywr;background-repeat: repeat-y;}
-$y_stripe_wro:url(/img/y-wro-24x1.svg);
-.left_stripe_wro{background-image:$y_stripe_wro;background-repeat: repeat-y;}
-$y_stripe_wwr:url(/img/y-wwr-24x1.svg);
-.left_stripe_wwr{background-image:$y_stripe_wwr;background-repeat: repeat-y;}
-$y_stripe_rro:url(/img/y-rro-24x1.svg);
-.left_stripe_rro{background-image:$y_stripe_rro;background-repeat: repeat-y;}
-$y_stripe_ooy:url(/img/y-ooy-24x1.svg);
-.left_stripe_ooy{background-image:$y_stripe_ooy;background-repeat: repeat-y;}
-$y_stripe_oor:url(/img/y-oor-24x1.svg);
-.left_stripe_oor{background-image:$y_stripe_oor;background-repeat: repeat-y;}
-$y_stripe_ror:url(/img/y-ror-24x1.svg);
-.left_stripe_ror{background-image:$y_stripe_ror;background-repeat: repeat-y;}
-$y_stripe_yoy:url(/img/y-yoy-24x1.svg);
-.left_stripe_yoy{background-image:$y_stripe_yoy;background-repeat: repeat-y;}
-$y_stripe_byb:url(/img/y-byb-24x1.svg);
-.left_stripe_byb{background-image:$y_stripe_byb;background-repeat: repeat-y;}
-$y_stripe_yby:url(/img/y-yby-24x1.svg);
-.left_stripe_yby{background-image:$y_stripe_yby;background-repeat: repeat-y;}
-$y_stripe_ywy:url(/img/y-ywy-24x1.svg);
-.left_stripe_ywy{background-image:$y_stripe_ywy;background-repeat: repeat-y;}
-$y_stripe_yry:url(/img/y-yry-24x1.svg);
-.left_stripe_yry{background-image:$y_stripe_yry;background-repeat: repeat-y;}
-$y_stripe_wbw:url(/img/y-wbw-24x1.svg);
-.left_stripe_wbw{background-image:$y_stripe_wbw;background-repeat: repeat-y;}
-$y_stripe_bob:url(/img/y-bob-24x1.svg);
-.left_stripe_bob{background-image:$y_stripe_bob;background-repeat: repeat-y;}
-$y_stripe_obo:url(/img/y-obo-24x1.svg);
-.left_stripe_obo{background-image:$y_stripe_obo;background-repeat: repeat-y;}
-$y_stripe_oro:url(/img/y-oro-24x1.svg);
-.left_stripe_oro{background-image:$y_stripe_oro;background-repeat: repeat-y;}
-$y_stripe_owo:url(/img/y-owo-24x1.svg);
-.left_stripe_owo{background-image:$y_stripe_owo;background-repeat: repeat-y;}
-*/

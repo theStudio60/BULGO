@@ -106,7 +106,7 @@ section, article{
   width:100%;
 }
 //.parallax-container.parallax-white{background-color:$white-alpha;background-image:$xy_lines_FFF;}
-.parallax-container{background-color:transparent; --filter:$backdrop-alpha;backdrop-filter:$backdrop-alpha;}
+.parallax-container{background-color:transparent;--filter:$backdrop-alpha;backdrop-filter:$backdrop-alpha;}
 //.parallax-container.parallax-black{background-color:$black-alpha-half;background-image:$xy_lines_000;}
 //.parallax-container.parallax-orange{background-color:$orange-alpha;}
 //.parallax-container.parallax-yellow{background-color:$yellow-alpha;background-image:$xy_lines_FFF;}
@@ -118,7 +118,6 @@ section, article{
 .footer-color-transparent
 {
   background-color:rgba($white,0);
-
 }
 .hero-body-transparent,
 .container-transparent
@@ -149,6 +148,9 @@ section, article{
 .footer-color-default,    //  are default
 .hero-body-,              //  <- no-error trick
 //
+.navbar-menu-transparent,
+.navbar-menu-default,
+.navbar-menu-white,
 .hero-body-white,
 .container-white,
 .section-color-white,
@@ -169,7 +171,7 @@ section, article{
   a:active,a:focus,a:hover
   {
     color: $black;
-    text-decoration:underline ;
+    //text-decoration:underline ;
   }
   // fa-icons styles
   .fa
@@ -200,7 +202,7 @@ section, article{
   }
   .button:active,.button:focus,.button:hover
   {
-    text-decoration: none;
+    //text-decoration: none;
     background-color: $black;
     color: $white;
     .fa //fa inside button
@@ -216,8 +218,6 @@ section, article{
   }
   color:$grey-darker;
 }
-
-
 // #
 // # yellow section style :
 // #
@@ -234,6 +234,7 @@ section, article{
   //backdrop-filter: $backdrop-alpha;
 }
 //inside a yellow box
+.navbar-menu-yellow,
 .hero-body-yellow,
 .container-yellow,
 .section-color-yellow,
@@ -306,7 +307,8 @@ section, article{
   background-color:$alpha-orange;
   //backdrop-filter: $backdrop-alpha;
 }
-//inside a yellow box
+//inside an orange box
+.navbar-menu-orange,
 .hero-body-orange,
 .container-orange,
 .section-color-orange,
@@ -380,6 +382,7 @@ section, article{
 }
 //inside a red box
 //
+.navbar-menu-red,
 .hero-body-red,
 .container-red,
 .section-color-red,
@@ -464,6 +467,7 @@ section, article{
 }
 //inside a black box
 //
+.navbar-menu-black,
 .hero-body-black,
 .container-black,
 .section-color-black,

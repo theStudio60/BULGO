@@ -2,59 +2,53 @@
 {{ $navbar_color := .Params.navbar_color }}
 {{ $navbar_left_stripe := .Params.navbar_left_stripe }}
 
-
 <nav
  id="header"
- class="navbar has-shadow is-fixed-top navbar-color-{{ $navbar_color }}"
+ class=" navbar has-shadow is-fixed-top navbar-color-{{ $navbar_color }}"
  role="navigation"
  aria-label="main-navigation"
- style="background-image:url(img/hatch-bottom-white.svg);background-repeat:no-repeat;max-height:64px"
- >
-  <div class="container">
-    <div class="navbar-brand  pad1y">
-    <a
-       class="navbar-brand-logo is-uppercase is-pulled-left"
-       href="{{.Site.BaseURL | absURL }}"
-       id="headerTitle"
-    >
-
-      <img class="pad" src=" {{ .Site.Params.logo }}" alt="" height=" " style="max-height:40px;">
+>
+  <div class="navbar-brand delta delta-bottom-white" id="navbarBrand">
+      <a id="headerTitle"
+        class="navbar-brand-logo is-uppercase is-pulled-left"
+        href="{{.Site.BaseURL | absURL }}"
+      >
+        <img class="pad" src="{{ .Site.Params.logo }}" alt="{{ .Site.Params.title }}" height=" " style="max-height:40px;">
       </a>
-      <a  style="background-color:{{ $navbar_color }}" role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-          <!--<span class="fa  fa-arrow"></span>-->
-      </a>
-    </div>
+        <a  style=" " role="button" class="navbar-burger burger pad" aria-label="menu" aria-expanded="false" data-target="navbarMenu" >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+            <!--<span class="fa  fa-arrow"></span>-->
+        </a>
 
-    <div id="navbarMenu" class="navbar-menu ">
+
+  </div>
+
+  <div id="navbarMenu" class="navbar-menu navbar-menu-{{ $navbar_color }}">
       <div class="navbar-end has-text-centered is-vcentered">
+        <a  class="navbar-item navbar-menu-entry" href="{{ "/" | absURL }}">
+          <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_01 }}"></span>
+          {{ .Site.Params.navbar.menuLinkName_01 }}
+        </a>
         <a  class="navbar-item navbar-menu-entry" href="{{ "/about" | absURL }}">
-
-          about
+          <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>
+          {{ .Site.Params.navbar.menuLinkName_02 }}
         </a>
-        <a  class="navbar-item navbar-menu-entry" href="{{ "/portfolio" | absURL }}">
-
-          portfolio
-        </a>
-        <a  class="navbar-item navbar-menu-entry" href="{{ "/tech" | absURL }}">
-
-          tech
+        <a  class="navbar-item navbar-menu-entry" href="{{ "/collections" | absURL }}">
+          <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_03 }}"></span>
+          {{ .Site.Params.navbar.menuLinkName_03 }}
         </a>
         <a  class="navbar-item navbar-menu-entry" href="{{ "/contact" | absURL }}">
-
-          contact
+          <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_04 }}"></span>
+          {{ .Site.Params.navbar.menuLinkName_04 }}
         </a>
-           <p  class="navbar-item navbar-menu-entry" href="{{ "/" | absURL }}">
-           <a href="#" class="pad1x"><span class="fa fa-2x fa-facebook-official"></span></a>
-           <a href="#" class="pad1x"><span class="fa fa-2x fa-twitter"></span></a>
-           <a href="#" class="pad1x"><span class="fa fa-2x fa-youtube"></span></a>
-
-           </p>
+        <a  class="navbar-item navbar-menu-entry" href="{{ .Site.Params.navbar.menuLinkUrl_05 }}">
+          <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_05 }}"></span>
+          {{ .Site.Params.navbar.menuLinkName_05 }}
+        </a>
       </div>
     </div>
-  </div>
 </nav>
 
 
@@ -66,12 +60,18 @@ document.addEventListener('DOMContentLoaded', function () {
       // Dropdowns in navbar
 
       var $dropdowns = getAll('.navbar-item.has-dropdown:not(.is-hoverable)');
-
+      var $nB = document.getElementById('#navbarBrand');
       if ($dropdowns.length > 0) {
         $dropdowns.forEach(function ($el) {
           $el.addEventListener('click', function (event) {
             event.stopPropagation();
             $el.classList.toggle('is-active');
+
+
+            $nB.classList.toggle('has-background-white');
+            console.log();
+            console.log($nB.classList);
+
           });
         });
 

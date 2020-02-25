@@ -33,6 +33,28 @@ company_mail = " "
 
 github = "https://github.com/theStudio60"
 
+[Params.navbar]
+menuLinkUrl_01 = "/"
+menuLinkName_01 = "home"
+menuLinkIcon_01 = ""
+
+menuLinkUrl_02 = ""
+menuLinkName_02 = "about"
+menuLinkIcon_02 = ""
+
+menuLinkUrl_03 = ""
+menuLinkName_03 = "collections"
+menuLinkIcon_03 = ""
+
+menuLinkUrl_04 = ""
+menuLinkName_04 = "contact"
+menuLinkIcon_04 = ""
+
+menuLinkUrl_05 = "https://github.com/theStudio60/bulgo"
+menuLinkName_05 = ""
+menuLinkIcon_05 = "github"
+
+
 [Params.homepage_01]
 title = "Sixty Vinyl Store"
 subtitle = "We buy and sell vinyls, CDs and audio equipment"

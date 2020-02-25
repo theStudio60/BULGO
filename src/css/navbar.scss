@@ -1,7 +1,7 @@
 //navbar commons
 .navbar
 {
-  max-height:$navbar-height;
+  max-height:$navbar-height;// 4rem / 64px...
 }
 .navbar-menu.is-active
 {
@@ -9,6 +9,7 @@
   vertical-align: center;
   -webkit-overflow-scrolling:touch;
   height:130vh;
+
   overflow: auto;
 }
 .navbar-menu-entry
@@ -18,12 +19,22 @@
 }
 .navbar-brand-logo
 {
-  //position: absolute;
   height:$navbar-height;
-  //left:24px!important;
-//  align-items: left;
-  //margin-left:0!important;
+  max-width:172px;
+
 }
+.navbar-burger.burger
+{
+  max-height:24px;
+  max-width:24px;
+  margin-top:20px;
+  margin-right:20px;
+  @extend .has-background-alpha-white;
+
+  border-radius:12px;
+
+}
+
 #navbarMenu
 {
   box-shadow: none;
@@ -35,35 +46,29 @@
 }
 .navbar-menu-entry{
   i{margin-right: 4px;font-size: 16px;}
-//  font-size: 20px;
+
   text-transform: uppercase;font-family:$family-alt;
 }
 //style: 'transparent'
 .navbar-color-transparent
 {
-  //backdrop-filter:blur(20px) ;
   .navbar-menu.is-active
   {
-    @extend .has-background-alpha;
+    @extend .has-background-alpha-white;
   }
-  a.navbar-item.navbar-menu-entry
-  {
-    //@extend .has-background-alpha-white;
-    color:$white;
-  }
-  .navbar-brand-logo,
+  a.navbar-item.navbar-menu-entry,
   .navbar-burger.burger
   {
-    color:$white;
-    //@extend .has-background-black;
+    color:$black;
+    @extend .has-background-alpha-white;
   }
   a.navbar-item.navbar-menu-entry:focus,
   a.navbar-item.navbar-menu-entry:focus-within,
   a.navbar-item.navbar-menu-entry:hover,
   a.navbar-item.navbar-menu-entry:active
   {
-    @extend .has-background-white;
-    text-decoration:underline;
+    color:$grey;
+  //  @extend .has-background-alpha-black;
   }
 }
 
@@ -87,9 +92,9 @@
   a.navbar-item.navbar-menu-entry:focus-within,
   a.navbar-item.navbar-menu-entry:hover,
   a.navbar-item.navbar-menu-entry:active
-  {
+  { color:$grey;
     @extend .has-background-white;
-    text-decoration:underline;
+    //text-decoration:underline;
   }
 }
 
