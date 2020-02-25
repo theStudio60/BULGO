@@ -1,22 +1,79 @@
-<section  class="section hero section-color-black" id="01" >
-  <div class="hero-parallax hero-body" style="background-image: url(); height:130vh; margin-top:-8rem">
-  <!--  <img data-src="images/vinyl_playing_bw.jpg" alt="hello" width="100%" height="100%" class="lazyload" style="background-size:cover; "> -->
-    <div class="parallax-container container is-fluid has-background-alpha pad" style="backdrop-filter:blur(20px);position:absolute;  top:45% ">
-      <div class="columns   is-centered is-vcentered has-text-centered">
-        <div class="column is-12  " >
-          <h1 class="subtitle " > homepage 01 title </h1>
-          <p class="pad1y">
-            Homepage 01 Paragraph :  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            <a href="{{ "/" | relURL }}">Homepage 01 Paragraph Link</a>
+<section id="01"
+class="
+ section
+ hero
+ section-color-black
+">
+  <div class="
+   hero-parallax
+   hero-body
+  ">
+    <div class="
+     parallax-container
+     container
+     is-fluid
+     has-background-alpha
+     pad
+    "
+    >
+      <div class="
+       columns
+       is-centered
+       is-vcentered
+       has-text-centered
+      ">
+        <div class="
+         column
+         is-10
+        ">
+          <h1 class="
+           title
+          ">
+            {{.Site.Params.homepage_01.title }}
+          </h1>
+          <h3 class="
+           subtitle
+           is-uppercase
+          ">
+            {{.Site.Params.homepage_01.subtitle }}
+          </h3>
+
+          <p class="
+
+           is-size-7
+           is-uppercase
+          ">
+            {{ .Site.Params.homepage_01.paragraph }}
           </p>
-          <p class="pad1y">
-            <a href="#" class="pad1x"><span class="fa fa-2x fa-facebook-official"></span></a>
-            <a href="#" class="pad1x"><span class="fa fa-2x fa-twitter"></span></a>
-            <a href="#" class="pad1x"><span class="fa fa-2x fa-youtube"></span></a>
+          <p class=" ">
+            <a
+            href="{{ .Site.Params.homepage_01.linkUrl_01 }}"
+            class="pad1x"
+            >
+              <span class="
+              fa
+              fa-{{ .Site.Params.homepage_01.linkIcon_01 }}
+              ">
+              </span>
+              {{ .Site.Params.homepage_01.linkName_01 }}
+            </a>
+
+            <a
+            href="{{ .Site.Params.homepage_01.linkUrl_02 }}"
+            class="pad1x"
+            >
+              <span class="
+              fa
+              fa-{{ .Site.Params.homepage_01.linkIcon_02 }}
+              ">
+              </span>
+              {{ .Site.Params.homepage_01.linkName_02 }}
+            </a>
           </p>
         </div>
       </div>
     </div>
-    <img data-src="images/vinyl_playing_bw.jpg" alt="hello" width="100%" height="100%" class="lazyload" style="background-size:cover; min-height:100vh ">
+    <img
+    data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" alt="hello" width="100%" height="100%" class="lazyload" style="background-size:cover;">
 
 </section>
