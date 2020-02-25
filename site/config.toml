@@ -25,16 +25,54 @@ page_background_image = ""
 footer_color = "white"
 footer_left_stripe = "roy"
 
-
-
-copyright_note_fr = "Tous droits réservés."
 copyright_note_en = "All rights reserved."
 
 company_name= "Studio60"
-company_phone = "+41 123 456 78"
-company_mail = "loremipsum@mail.com"
+company_phone = " "
+company_mail = " "
 
- facebook = "https://facebook.com/"
- twitter = "https://twitter.com/"
- instagram = "https://instagram.com/"
- youtube = "https://youtube.com/"
+github = "https://github.com/theStudio60"
+
+[Params.homepage_01]
+title = "Sixty Vinyl Store"
+subtitle = "We buy and sell vinyls, CDs and audio equipment"
+paragraph = "This hugo theme was designed and developed by Fabien Dupont & Isaac Aristil (Studio60)"
+
+backgroundImageSrc = "images/vinyl_playing_bw.jpg"
+
+linkUrl_01 = "https://STUDIO60.ch/contact"
+linkIcon_01 = "arrow-right"
+linkName_01 = "Contact Us !"
+
+linkUrl_02 = "https://github.com/theStudio60/bulgo"
+linkIcon_02 = "github"
+linkName_02 = "See this project on github"
+
+[Params.homepage_02]
+topMiniTitle = "About us..."
+title = ""
+subtitle = "We buy and sell electronic & dance music records"
+paragraph = "What started as a small record store soon became an online shop. Musically we are mostly focused on dance music, we are specialists for vinyl, original records and rarities from the eighties until today. "
+imageSrc = "images/vinyls_pile.jpg"
+imageAlt = "Vinyls Pile"
+
+linkUrl_01 = ""
+linkIcon_01 = "list"
+linkName_01 = "Our collection"
+
+
+[Params.homepage_03]
+topMiniTitle = "About us..."
+title = "We certainly have something good in our collections for you and your dancefloor !"
+subtitle = "Our vinyl collection is one of the finest. We have new vinyl arrivals from all around the world every week."
+paragraph = "What started as a small record store soon became an online shop. Musically we are mostly focused on dance music, we are specialists for vinyl, original records and rarities from the eighties until today. "
+imageSrc = "images/vinyls_pile.jpg"
+imageAlt = "Vinyls Pile"
+
+linkUrl_01 = "https://STUDIO60.ch/contact"
+linkIcon_01 = "arrow-right"
+linkName_01 = "Contact Us !"
+
+linkUrl_02 = "https://github.com/theStudio60/bulgo"
+linkIcon_02 = "github"
+linkName_02 = "See this project on github"
