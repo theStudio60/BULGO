@@ -53,6 +53,11 @@ section, article{
   width: 100%;
   background-repeat: repeat-y;
 }
+.hero-body.hero-parallax
+{
+  min-height:calc(100vh + 8rem);
+  margin-top:-8rem ;
+}
 .hero-footer
 {
   margin:0!important;
@@ -86,7 +91,10 @@ section, article{
 //  clip-path:polygon(0 100%, 0 0%, 100% 20%, 100% 100%);
   z-index:-1;
 }
-.parallax-container{
+.parallax-container.container{
+  backdrop-filter:blur(20px);
+  position:absolute;
+  top:35%;
   position:absolute;
 }
 .parallax-container.parallax-white,
@@ -98,7 +106,7 @@ section, article{
   width:100%;
 }
 //.parallax-container.parallax-white{background-color:$white-alpha;background-image:$xy_lines_FFF;}
-.parallax-container{background-color:transparent; backdrop-filter:$backdrop-alpha;}
+.parallax-container{background-color:transparent; --filter:$backdrop-alpha;backdrop-filter:$backdrop-alpha;}
 //.parallax-container.parallax-black{background-color:$black-alpha-half;background-image:$xy_lines_000;}
 //.parallax-container.parallax-orange{background-color:$orange-alpha;}
 //.parallax-container.parallax-yellow{background-color:$yellow-alpha;background-image:$xy_lines_FFF;}

@@ -87,13 +87,13 @@ body{
 }
 */
 .title, h1{
-text-transform: uppercase;
+//text-transform: uppercase;
 //  letter-spacing: -.2rem;
  font-size: $size-1;
 }
 h2
 {
-  letter-spacing: -.18rem;
+//  letter-spacing: -.18rem;
     font-size: $size-2;
 
 }
