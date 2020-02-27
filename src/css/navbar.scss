@@ -9,8 +9,10 @@
   vertical-align: center;
   -webkit-overflow-scrolling:touch;
   height:130vh;
-
+  position: absolute;
   overflow: auto;
+  margin-top:$navbar-height;
+  width:256px;
 }
 .navbar-menu-entry
 {
@@ -20,7 +22,7 @@
 .navbar-brand-logo
 {
   height:$navbar-height;
-  max-width:172px;
+  width:256px;
 
 }
 .navbar-burger.burger
