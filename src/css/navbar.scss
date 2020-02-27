@@ -34,7 +34,10 @@
   border-radius:12px;
 
 }
-
+.burger.is-active
+{
+  border-radius:120px;
+}
 #navbarMenu
 {
   box-shadow: none;

@@ -206,6 +206,9 @@ $text-strong: $black !default;
  //$delta_bottom-:url( /img/delta-bottom-.svg); //
 */
 .delta{
+  margin: 0;
+  padding:0;
+  border:0;
   background-repeat:no-repeat;max-height:64px;
 }
  //white
