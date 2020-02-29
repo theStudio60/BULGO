@@ -1,30 +1,27 @@
 <section id="02"
 class="
  section
- section02
- hero
- section
- section-color-white
- left_stripe
+ hero 
+ section-color-black
 ">
   <div class="
    hero-body
-   hero-body-white
+   hero-body-black
    left_stripe_roy
   ">
     <div
      id=" "
-     class=" container is-fluid "
-     style="margin-left:24px"
+     class=" container is-fluid is-fullwidth"
+     style="margin-left:12px"
      >
      <div id="magicDiv02" class="magicDiv" data-delay="0.9s">
       <div class=" columns is-centered is-vcentered ">
-        <div class="column is-3 lined_black pad">
+        <div class="column is-3 has-background-white-lines pad">
           <figure class="image is-square ">
             <img class="lazyload is-rounded" data-src="{{.Site.Params.homepage_02.imageSrc }}" alt="">
           </figure>
         </div>
-        <div class=" column is-6 pad2 ">
+        <div class=" column is-6 pad">
           <p class=" is-size-7 ">
             {{.Site.Params.homepage_02.topMiniTitle }}
           </p>
@@ -37,18 +34,6 @@ class="
           <p class="is-size-4 is-uppercase ">
             {{ .Site.Params.homepage_02.paragraph }}
           </p>
-          <br>
-          <a href="{{ .Site.Params.homepage_02.linkUrl_01 }}"
-           class="button is-pulled-right"
-          >
-            <span class="
-            fa
-            fa-{{ .Site.Params.homepage_02.linkIcon_01 }}
-            pad1x
-            ">
-            </span>
-            <p class="pad1x">{{ .Site.Params.homepage_02.linkName_01 }}</p>
-          </a>
         </div>
       </div>
       </div>
