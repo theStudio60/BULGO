@@ -60,15 +60,15 @@ $alpha-primary:$alpha-white;
 
 .has-background-white
 {background-color:$white;}
-.has-background-alpha-white,
+.has-background-alpha-white
 {background-color:$alpha-white;}
 .has-background-black
 {background-color:$black;}
-.has-background-alpha-black,
+.has-background-alpha-black
 {background-color:$alpha-black;}
 .has-background-grey
 {background-color:$grey;}
-.has-background-alpha-grey,
+.has-background-alpha-grey
 {background-color:$alpha-grey;}
 .has-background-yellow
 {background-color:$yellow;}
@@ -87,10 +87,10 @@ $alpha-primary:$alpha-white;
 # 03 : Backdrop filter FX
 #
 */
-$backdrop-alpha: blur(30px)   ;
+$backdrop-alpha: blur(130px)   ;
 .has-background-alpha
 {
-  backdrop-filter:blur(10px);
+  backdrop-filter:$backdrop-alpha;
 }
 
 /*
@@ -257,6 +257,10 @@ $y_lines_FFF:url( /img/y_lines_white_24x100.png); //white
   background-image:$y_lines_FFF;
   background-repeat: repeat-y;
 }
+
+.has-background-white-lines{@extend .lined_white;}
+.has-background-black-lines{@extend .lined_black;}
+
 
 $y_stripe_white:url(/img/y-white-24x1.svg);
 .left_stripe_white{background-image:$y_stripe_white;background-repeat: repeat-y;}
