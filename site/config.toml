@@ -60,7 +60,7 @@ title = "Sixty Vinyl Store"
 subtitle = "We buy and sell vinyls, CDs and audio equipment"
 paragraph = "This hugo theme was designed and developed by Fabien Dupont & Isaac Aristil (Studio60)"
 
-backgroundImageSrc = "images/vinyl_playing_bw.jpg"
+backgroundImageSrc = "images/vinyl_playing_hq_bw.jpg"
 
 linkUrl_01 = "https://STUDIO60.ch/contact"
 linkIcon_01 = "arrow-right"
