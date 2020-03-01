@@ -264,11 +264,11 @@ article,
   .fa:active,.fa:focus,.fa:hover
   {color: $orange;}
   .fa.fa-3x
-  {color: $orange;}
+  {color: $red;}
   .fa.fa-3x:active,
   .fa.fa-3x:focus,
   .fa.fa-3x:hover
-  {color: $grey-darker;}
+  {color: $white;}
   // buttons
   .button
   {
@@ -337,9 +337,9 @@ article,
   .fa
   {color: $red;}
   .fa:active,.fa:focus,.fa:hover
-  {color: $orange;}
+  {color: $red;}
   .fa.fa-3x
-  {color: $orange;}
+  {color: $white;}
   .fa.fa-3x:active,
   .fa.fa-3x:focus,
   .fa.fa-3x:hover
