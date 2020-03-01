@@ -60,7 +60,7 @@
     align-items: center;
 }
 .navbar-brand-logo {
-    margin-left:16px;
+    //margin-left:16px;
     height: $navbar-height;
     max-width: 256px;
 }
@@ -71,8 +71,8 @@
     margin-bottom: 16px;
     margin-right: 16px;
     margin-left: 16px;
-    @extend .has-background-alpha-white;
-    span {color: $black}
+    @extend .has-background-black;
+    span {color: $white}
     border-radius:16px;
 }
 
@@ -92,12 +92,13 @@
     padding-top:16px!important;
     font-size: 16px!important;
     text-align: end;
+    color:$white;
 }
 .navbar-brand {
     h1 {
         mix-blend-mode: darken;
     }
-    backdrop-filter: dark(40);
+    //backdrop-filter: dark(40);
 }
 
 .navbar-menu-entry {
@@ -117,8 +118,8 @@
     }
     a.navbar-item.navbar-menu-entry,
     .navbar-burger.burger {
-        @extend .has-background-alpha-white;
-        color: $black;
+        @extend .has-background-alpha-black;
+        color: $white;
     }
     a.navbar-item.navbar-menu-entry:focus,
     a.navbar-item.navbar-menu-entry:focus-within,
