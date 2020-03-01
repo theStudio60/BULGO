@@ -3,17 +3,20 @@
   margin-left:$gap;
 }
 
-section,
+section
+
+/*,
 article,
 .section,
 .hero
+*/
 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   white-space:initial;
   max-width:100vw!important;
   height:100%!important;
-  min-height:100vh;
+  //
   margin:0!important;
   padding-top:0!important;
   padding-right:0!important;
@@ -21,7 +24,13 @@ article,
   padding-bottom:0!important;
   overflow-x : hidden;
 }
- 
+.hero
+{
+  @extend section;
+  min-height:100vh;
+}
+
+.section-body,
 .hero-body,
 .hero-head
 {
@@ -35,7 +44,15 @@ article,
 .hero-body
 {
 // display:grid;
- // min-height: 100vh;
+  //height: 100vh;
+  width: 100%;
+  background-repeat: repeat-y;
+}
+.section-body
+{
+// display:grid;
+  //height: 100vh;
+  padding-top:$navbar-height;
   width: 100%;
   background-repeat: repeat-y;
 }
@@ -106,6 +123,7 @@ article,
 {
   background-color:rgba($white,0);
 }
+.section-body-transparent,
 .hero-body-transparent,
 .container-transparent
 {
@@ -124,6 +142,8 @@ article,
 }
 // # white boxes style :
 .hero-body-,
+.section-body-,
+.section-body-white,
 .hero-body-white,
 .container-white
 {
@@ -163,20 +183,13 @@ article,
   // fa-icons styles
   .fa
   {
-    color: $white;
+  //  color: $white;
   }
   .fa:active,.fa:focus,.fa:hover
   {
-    color: $primary;
+  //  color: $black;
   }
-  .fa.fa-3x
-  {
-    color: $grey;
-  }
-  .fa.fa-3x:active, .fa.fa-3x:focus, .fa.fa-3x:hover
-  {
-    color: $grey-darker;
-  }
+ 
   // buttons
   .button
   {
@@ -214,6 +227,7 @@ article,
   background-color: $yellow;
 }
 // # yellow boxes style :
+.section-body-yellow,
 .hero-body-yellow,
 .container-yellow
 {
@@ -288,6 +302,7 @@ article,
   background-color: $orange;
 }
 // # orange boxes style :
+.section-body-orange,
 .hero-body-orange,
 .container-orange
 {
@@ -356,11 +371,12 @@ article,
 // # red section style :
 // #
 .section-color-red,
-.footer-color-red,
+.footer-color-red
 {
    background-color: $red;
 }
 // # red boxes style :
+.section-body-red,
 .hero-body-red,
 .container-red
 {
@@ -441,11 +457,12 @@ article,
 // # black section style :
 // #
 .section-color-black,
-.footer-color-black,
+.footer-color-black
 {
    background-color: $black;
 }
 // # black boxes style :
+.section-body-black,
 .hero-body-black,
 .container-black
 {
