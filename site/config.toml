@@ -72,29 +72,67 @@ linkName_02 = "See this project on github"
 
 [Params.homepage_02]
 topMiniTitle = "another static website made with hugo"
-title = "About this website"
-subtitle = " "
-paragraph = "Hello world. My name is Bulgo. I'm a theme system for Hugo, the static website generator. I was made with Bulma CSS. Actually, i use mainly orange, red, yellow, white and black colors. "
+title = "Hello world 🙂"
+subtitle = "My name is Bulgo. I'm a theme for Hugo, the static website generator. I was made with Bulma CSS. Actually, i use mainly orange, red, yellow, white and black colors. "
+paragraph = "This section has a white background and a colored stripe on the left."
 imageSrc = "images/k7.png"
 imageAlt = "Vinyls Pile"
 
 linkUrl_01 = ""
 linkIcon_01 = "list"
-linkName_01 = "Our collection"
+linkName_01 = "this is a  link"
 
 
-[Params.homepage_03]
-topMiniTitle = "About us..."
-title = "We certainly have something good in our collections for you and your dancefloor !"
-subtitle = "Our vinyl collection is one of the finest. We have new vinyl arrivals from all around the world every week."
-paragraph = "What started as a small record store soon became an online shop. Musically we are mostly focused on dance music, we are specialists for vinyl, original records and rarities from the eighties until today. "
-imageSrc = "images/vinyls_pile.jpg"
+
+[Params.homepage_03_01]
+topMiniTitle = "this is a yellow section"
+title = "this is how a yellow section looks like"
+subtitle = "we use arial black on all headings"
+paragraph = "My creators created me to be an quick and easy theming setup for the own website. "
+
+imageSrc = "images/k7.png"
 imageAlt = "Vinyls Pile"
 
-linkUrl_01 = "https://STUDIO60.ch/contact"
-linkIcon_01 = "arrow-right"
-linkName_01 = "Contact Us !"
+linkUrl_01 = ""
+linkIcon_01 = " "
+linkName_01 = " "
 
-linkUrl_02 = "https://github.com/theStudio60/bulgo"
-linkIcon_02 = "github"
-linkName_02 = "See this project on github"
+[Params.homepage_03_02]
+topMiniTitle = "this is an orange section 🍊"
+title = "i needed to write this line on a nice orange section"
+subtitle = ""
+paragraph = ""
+
+imageSrc = "images/rca-orange.jpg"
+imageAlt = "orange vinyl label"
+
+linkUrl_01 = ""
+linkIcon_01 = " "
+linkName_01 = "Links are Orange on white containers"
+
+[Params.homepage_03_03]
+topMiniTitle = "lifestyle & stuff"
+title = "Why using a good earphones set is important ?"
+subtitle = ""
+paragraph = "Good headphones will go as low as 20 Hz, the lowest limit of our hearing. Frequency responses are measured using sine sweeps and special test equipment."
+
+imageSrc = "images/red-earphone_music_lifestyle.jpg"
+imageAlt = "earphones"
+
+linkUrl_01 = ""
+linkIcon_01 = " "
+linkName_01 = "Links are Orange on white containers"
+ 
+[Params.homepage_04]
+topMiniTitle = "this is a yellow section"
+title = "section body yellow"
+subtitle = "arial black on all headings"
+paragraph = "Homepage 03.03 Paragraph : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+imageSrc = "images/red-earphone_music_lifestyle.jpg"
+imageAlt = "earphones"
+
+linkUrl_01 = ""
+linkIcon_01 = " "
+linkName_01 = "Links are Orange on white containers"
+ 
