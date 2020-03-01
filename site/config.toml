@@ -60,7 +60,7 @@ title = "Bulgo"
 subtitle = "Another bulma css theme for hugo static website generator"
 paragraph = "This hugo theme was designed and developed by Fabien Dupont & Isaac Aristil (Studio60)"
 
-backgroundImageSrc = "images/vinyl_playing_hq_bw.jpg"
+backgroundImageSrc = "images/vinyl_playing_bw.jpg"
 
 linkUrl_01 = "https://STUDIO60.ch/contact"
 linkIcon_01 = "arrow-right"
@@ -71,11 +71,11 @@ linkIcon_02 = "github"
 linkName_02 = "See this project on github"
 
 [Params.homepage_02]
-topMiniTitle = "About us..."
-title = ""
-subtitle = "We buy and sell electronic & dance music records"
-paragraph = "What started as a small record store soon became an online shop. Musically we are mostly focused on dance music, we are specialists for vinyl, original records and rarities from the eighties until today. "
-imageSrc = "images/vinyls_pile.jpg"
+topMiniTitle = "another static website made with hugo"
+title = "About this website"
+subtitle = " "
+paragraph = "Hello world. My name is Bulgo. I'm a theme system for Hugo, the static website generator. I was made with Bulma CSS. Actually, i use mainly orange, red, yellow, white and black colors. "
+imageSrc = "images/k7.png"
 imageAlt = "Vinyls Pile"
 
 linkUrl_01 = ""
