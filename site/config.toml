@@ -56,8 +56,8 @@ menuLinkIcon_05 = "github"
 
 
 [Params.homepage_01]
-title = "Sixty Vinyl Store"
-subtitle = "We buy and sell vinyls, CDs and audio equipment"
+title = "Bulgo"
+subtitle = "Another bulma css theme for hugo static website generator"
 paragraph = "This hugo theme was designed and developed by Fabien Dupont & Isaac Aristil (Studio60)"
 
 backgroundImageSrc = "images/vinyl_playing_hq_bw.jpg"
