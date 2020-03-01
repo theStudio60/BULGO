@@ -2,20 +2,22 @@
 <nav id="header" class=" navbar has-shadow is-fixed-top navbar-color-{{ $navbar_color }} is-flex" role="navigation" aria-label="main-navigation">
 
     <div class="navbar-brand " id="navbarBrand">
-        <a id="headerTitle" class="navbar-brand-logo is-uppercase pad1y" href="{{.Site.BaseURL | absURL }}">
-            <h1 class="is-size-6 pad2x has-text-black">{{.Site.Title }}</h1>
+        <a id="headerTitle" class="navbar-brand-logo is-uppercase " href="{{.Site.BaseURL | absURL }}">
+           
+            <img class=" " src="{{ .Site.Params.logo }}" alt="{{ .Site.Params.title }}" height=" " style="max-height:64px;"> 
 
-            <!--       
-      <img class=" " src="{{ .Site.Params.logo }}" alt="{{ .Site.Params.title }}" height=" " style="max-height:40px;"> 
+            <!--    
+                
+                 <h1 class="subtitle has-text-black">{{.Site.Title }}</h1>
 
 -->
         </a>
 
     </div>
-    <div id="menuLabel" class="is-pulled-right is-hidden-desktop menu-label"><i>MENU</i></div>
-
-
-    <a id="burger" style=" " role="button" class="navbar-burger burger " aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+    <div class="container is-fluid is-marginless is-paddingless is-borderless has-text-right is-hidden-desktop" style="">
+    <div id="menuLabel" class="menu-label"><p class="menu-label-content">MENU</p></div>
+</div>
+    <a id="burger" style=" " role="button" class="navbar-burger burger pad" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
 
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
@@ -44,5 +46,6 @@
         </div>
 
     </div>
+    
 
 </nav>
