@@ -11,36 +11,23 @@ document.onmouseenter = function() {};
 //var menuLabel = document.getElementById("menuLabel");
 var burger = document.getElementById("burger");
 var navbar = document.getElementById("header");
+var navbarMenu = document.getElementById("navbarMenu");
 var navbarBrand = document.getElementById("navbarBrand");
 var section01 = document.getElementById("01");
 var section02 = document.getElementById("02");
-navbar.onmouseenter = function(){
-//
+navbar.onmouseenter = function(){ 
   document.getElementById("header").classList.add("has-background-alpha-black");
-  //document.getElementById("navLink").classList.add("has-background-black");
-  
-  //document.getElementById("navbarBrand").classList.add("left_stripe_roy");
-  //document.getElementById("navbarBrand").classList.add("has-background-white");
+  document.getElementById("navList").classList.remove("is-hidden-desktop"); 
 }
 navbar.onmouseleave = function(){
   document.getElementById("header").classList.remove("has-background-alpha-black");
- // document.getElementById("navbarBrand").classList.remove("left_stripe_roy");
- // document.getElementById("navbarBrand").classList.remove("has-background-white");
+  document.getElementById("navList").classList.add("is-hidden-desktop"); 
 }
 burger.onmouseenter = function() {
   document.getElementById("menuLabel").className = "menu-label-slideLeft";
-   
-  //navbar.style.backgroundColor = "#fff";
-  //navbarBrand.style.backgroundColor = "#fff";
-  burger.style.backgroundColor = "rgb(250,69,56)";
 };
-
 burger.onmouseleave = function() {
-//  burger.style.borderRadius = "120px";
-  burger.style.backgroundColor = "#000";
   document.getElementById("menuLabel").className = "menu-label";
-
-
 };
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -93,10 +80,24 @@ document.addEventListener("DOMContentLoaded", function() {
   // Functions
   function scrollFxFunction() {
   
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400  ) {
+  var section02_top = $("#01").height() - 1;
+  
+  var section03_01_top = section02_top + $("#02").height();
+  var section03_02_top = section03_01_top + $("#03_01").height();
+  var section03_03_top = section03_02_top + $("#03_02").height();
+  
+  if (document.body.scrollTop > section02_top || document.documentElement.scrollTop > section02_top  ) {
       document.getElementById("magicDiv02").className = "slideUp";
     }
-
+  if (document.body.scrollTop > section03_01_top || document.documentElement.scrollTop > section03_01_top ) {
+      document.getElementById("magicDiv03").className = "slideUp";
+    }
+  if (document.body.scrollTop > section03_02_top || document.documentElement.scrollTop > section03_02_top  ) {
+      document.getElementById("magicDiv04").className = "slideUp";
+    }
+  if (document.body.scrollTop > section03_03_top || document.documentElement.scrollTop > section03_03_top  ) {
+      document.getElementById("magicDiv05").className = "slideUp";
+    }
   }
   function getAll(selector) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
