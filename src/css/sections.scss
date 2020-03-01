@@ -51,11 +51,13 @@ article,
 
 .hero-image
 {
-  padding-bottom: 0!important;
-  z-index:18!important;
-  position:absolute!important;
+  //padding-bottom: 0!important;
+  //z-index:18!important;
+  //position:absolute!important;
+  height:100vh!important;
   width:100%!important;
-  bottom:0;
+  top:0;
+  
   overflow-y: hidden;
 }
 
@@ -78,7 +80,7 @@ article,
 .parallax-container.container{
   //backdrop-filter:blur(20px);
    
-  top:35%;
+  top:25%;
   position:absolute;
 }
 .parallax-container.parallax-white,
@@ -90,7 +92,8 @@ article,
   width:100%;
 }
 //.parallax-container.parallax-white{background-color:$white-alpha;background-image:$xy_lines_FFF;}
-.parallax-container{background-color:transparent;--filter:$backdrop-alpha;backdrop-filter:$backdrop-alpha;}
+//.parallax-container{background-color:transparent;--filter:$backdrop-alpha;backdrop-filter:$backdrop-alpha;}
+.parallax-container{@extend .has-background-alpha-black;}
 //.parallax-container.parallax-black{background-color:$black-alpha-half;background-image:$xy_lines_000;}
 //.parallax-container.parallax-orange{background-color:$orange-alpha;}
 //.parallax-container.parallax-yellow{background-color:$yellow-alpha;background-image:$xy_lines_FFF;}
@@ -160,7 +163,7 @@ article,
   // fa-icons styles
   .fa
   {
-    color: $black;
+    color: $white;
   }
   .fa:active,.fa:focus,.fa:hover
   {
