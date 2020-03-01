@@ -1,20 +1,30 @@
-<section class="section-color-white" id="03_01" > <!-- this one is subdivided -->
-  <div class="section-body section-body-white  " >
+<!-- this one is subdivided -->
+<img class="left_stripe_roy is-paddingless is-marginless has-background-white" src="img/delta-top-yellow.svg" width="100%" height="100%" >
+
+<section class="section-color-yellow" id="03_01" > 
+  <div class="section-body section-body-yellow  " >
     <div class="container is-fluid ">
-      <div class="columns is-centered is-vcentered    ">
-        <div class="column is-3 lined_black">
-          <figure class="image is-square ">
-            <img class="lazyload is-rounded " data-src="images/rca-orange.jpg" alt="" style="">
-          </figure>
-        </div>
-        <div class="column is-9   has-text-left">
-          <a class="is-uppercase  " href="{{ "/" | relURL }}">Homepage 03.01 Top Link</a>
-          <h1 class="subtitle " > homepage 03.01 title </h1>
-          <p class="  ">
-            Homepage 03.01 Paragraph : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <div id="magicDiv03" class="magicDiv" data-delay="1.9s">
+        <div class=" columns is-centered is-vcentered ">
+          <div class="column is-3 has-background-black-lines pad2">
+            <figure class="image ">
+              <img class="lazyload " data-src="{{.Site.Params.homepage_03_01.imageSrc }}" alt="">
+            </figure>
+          </div>          
+          <div class=" column is-9 has-text-left">
+          <p class=" is-size-7 is-uppercase ">
+            {{.Site.Params.homepage_03_01.topMiniTitle }}
           </p>
-          <div class="buttons  pad2y">
-            <a class="button " href="{{ "/" | relURL }}">Homepage 03.01 Button</a>
+          <h1 class="title is-uppercase">
+            {{.Site.Params.homepage_03_01.title }}
+          </h1>
+          <h3 class="subtitle">
+            {{.Site.Params.homepage_03_01.subtitle }}
+          </h3>
+          <p class="is-size-4 is-uppercase ">
+
+            {{ .Site.Params.homepage_03_01.paragraph }}
+          </p>
           </div>
         </div>
       </div>
@@ -26,29 +36,38 @@
     </div>
   </div>
 </section>
-<img class="is-paddingless is-marginless has-background-yellow" src="img/delta-bottom-white.svg" width="100%" height="100%" >
 
-<section class="section section-color-yellow" id="03_02">
-  <div class="section-body section-body-yellow" >
+
+
+<img class="is-paddingless is-marginless has-background-orange" src="img/delta-bottom-yellow.svg" width="100%" height="100%" >
+<section class="section section-color-orange" id="03_02">
+  <div class="section-body section-body-orange  " >
     <div class="container is-fluid ">
-      <div class="columns is-centered is-vcentered    ">
-        <div class="column is-9   has-text-right">
-          <a class="is-uppercase  " href="{{ "/" | relURL }}">Homepage 03.02 Top Link</a>
-          <h1 class="subtitle " > homepage 03.02 title </h1>
-          <p class="  ">
-            Homepage 03.02 Paragraph : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      <div id="magicDiv04" class="magicDiv" data-delay="1.9s">
+        <div class=" columns is-centered is-vcentered ">
+          <div class=" column is-9 has-text-right">
+          <p class=" is-size-7 is-uppercase ">
+            {{.Site.Params.homepage_03_02.topMiniTitle }}
           </p>
-          <div class="buttons is-right pad2y">
-            <a class="button " href="{{ "/" | relURL }}">Homepage 03.02 Button</a>
+          <h1 class="title is-uppercase">
+            {{.Site.Params.homepage_03_02.title }}
+          </h1>
+          <h3 class="subtitle">
+            {{.Site.Params.homepage_03_02.subtitle }}
+          </h3>
+          <p class="is-size-4 is-uppercase ">
+
+            {{ .Site.Params.homepage_03_02.paragraph }}
+          </p>
+          </div>
+          <div class="column is-3 has-background-black-lines pad2">
+            <figure class="image ">
+              <img class="lazyload " data-src="{{.Site.Params.homepage_03_02.imageSrc }}" alt="">
+            </figure>
           </div>
         </div>
-        <div class="column is-3  ">
-          <figure class="image is-centered">
-            <img class="lazyload is-square " data-src="images/cassette_tape_bw.png" alt="" style=" ">
-          </figure>
-        </div>
-
       </div>
+
       <div class="columns is-hidden-mobile pad2y">
         <div class="column is-12 has-text-left"> 
           <a href="/#03_03" class=" "><span class="fa fa-arrow-down fa-3x"></span></a>
@@ -56,64 +75,43 @@
       </div>
     </div>
   </div>
-</section>
-<img class="is-paddingless is-marginless has-background-yellow" src="img/delta-top-orange.svg" width="100%" height="100%" >
+</section> <img class="is-paddingless is-marginless has-background-orange" src="img/delta-top-red.svg" width="100%" height="100%" >
 
-<section class="section-color-orange" id="03_03">
-  <div class="section-body section-body-orange  pad2y is-paddingless " >
-    <div class="container is-fixed is-fluid has-text-centered is-fullheight">
-        <div class="content">
-          <div class="columns is-centered is-vcentered">
-            <div class="column is-9">
-              <a class="is-uppercase is-size-7  " href="{{ "/" | relURL }}">Homepage 03.03 Top Link</a>
-              <h1 class="title is-1 " > homepage 03.03 title </h1>
-                <hr>
-                <h3 class="subtitle is-uppercase">
-                    h3 class = subtitle is-uppercase <a href="{{ "/" | relURL }}">This is a link.</a>
-                </h3>
-
-                <a class="button" href="{{ "/" | relURL }}">button</a>
-            </div>
-          </div>
-          <div class="columns is-hidden-mobile pad2y">
-            <div class="column is-12 has-text-left"> 
-              <a href="/#03_04" class=" "><span class="fa fa-arrow-down fa-3x"></span></a>
-            </div>
-          </div>
-        </div>
-    </div>
-  </div>
-</section>
-<img class="is-paddingless is-marginless has-background-orange" src="img/delta-top-red.svg" width="100%" height="100%" >
-
-<section class="section-color-red" id="03_04">
-  <div class="section-body section-body-red  pad2y is-paddingless " >
+<section class="section section-color-red" id="03_03">
+  <div class="section-body section-body-red">
     <div class="container is-fluid ">
-      <div class="columns is-centered is-vcentered    ">
-        <div class="column is-3 ">
-          <figure class="image is-centered">
-            <img class="lazyload is-square " data-src="images/red-earphone_music_lifestyle.jpg" alt="" style=" ">
-          </figure>
-        </div>
-        <div class="column is-9   has-text-left">
-          <a class="is-uppercase  " href="{{ "/" | relURL }}">Homepage 03.01 Top Link</a>
-          <h1 class="subtitle " > homepage 03.01 title </h1>
-
-          <p class="  ">
-            Homepage 03.01 Paragraph : Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
-          <div class="buttons  pad2y">
-            <a class="button " href="{{ "/" | relURL }}">Homepage 03.01 Button</a>
+      <div id="magicDiv05" class="magicDiv" data-delay="1.9s">
+ 
+        <div class="columns is-centered is-vcentered   ">
+          <div class="column is-3 ">
+            <figure class="image is-centered">
+              <img class="lazyload is-square " data-src="{{.Site.Params.homepage_03_03.imageSrc }}" alt="{{.Site.Params.homepage_03_03.imageAlt }}" style=" ">
+            </figure>
+          </div>
+          <div class="column is-9  ">
+            <p class=" is-size-7 is-uppercase ">
+              {{.Site.Params.homepage_03_03.topMiniTitle }}
+            </p>
+            <h1 class="title is-uppercase">
+              {{.Site.Params.homepage_03_03.title }}
+            </h1>
+            <h3 class="subtitle">
+              {{.Site.Params.homepage_03_03.subtitle }}
+            </h3>
+            <p class="is-size-6  ">
+              {{.Site.Params.homepage_03_03.paragraph }}
+            </p>
+  
           </div>
         </div>
       </div>
+
       <div class="columns is-hidden-mobile pad2y">
         <div class="column is-12 has-text-left"> 
           <a href="/#04" class=" "><span class="fa fa-arrow-down fa-3x"></span></a>
         </div>
       </div>
-    </div>      
-    </div>
+    </div> 
   </div>
-</section>
-<img class="is-paddingless is-marginless has-background-white" src="img/delta-bottom-red.svg" width="100%" height="100%" >
+</section> 
+ 
