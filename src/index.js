@@ -16,15 +16,15 @@ var section01 = document.getElementById("01");
 var section02 = document.getElementById("02");
 navbar.onmouseenter = function(){
 //
-  document.getElementById("header").classList.add("has-background-alpha-white");
+  document.getElementById("header").classList.add("has-background-alpha-black");
   //document.getElementById("navLink").classList.add("has-background-black");
   
-  document.getElementById("navbarBrand").classList.add("left_stripe_roy");
+  //document.getElementById("navbarBrand").classList.add("left_stripe_roy");
   //document.getElementById("navbarBrand").classList.add("has-background-white");
 }
 navbar.onmouseleave = function(){
-  document.getElementById("header").classList.remove("has-background-alpha-white");
-  document.getElementById("navbarBrand").classList.remove("left_stripe_roy");
+  document.getElementById("header").classList.remove("has-background-alpha-black");
+ // document.getElementById("navbarBrand").classList.remove("left_stripe_roy");
  // document.getElementById("navbarBrand").classList.remove("has-background-white");
 }
 burger.onmouseenter = function() {
@@ -37,7 +37,7 @@ burger.onmouseenter = function() {
 
 burger.onmouseleave = function() {
 //  burger.style.borderRadius = "120px";
-  burger.style.backgroundColor = "#fff";
+  burger.style.backgroundColor = "#000";
   document.getElementById("menuLabel").className = "menu-label";
 
 
