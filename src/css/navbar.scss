@@ -17,8 +17,9 @@
 }
 
 .menu-label {
-    position: absolute;
+    //position: absolute;
     visibility: hidden;
+    //right:0;
 }
 
 .menu-label-slideLeft {
@@ -27,65 +28,76 @@
     animation-duration: 1s;
     -webkit-animation-duration: 1s;
     visibility: visible;
+    
+    p{
+        align-items: flex-end;
+        text-align: end;
+    }
 }
 
 @keyframes labelSlideToLeft {
     0% {
         opacity: 0;
-        -webkit-transform: translateX(35%);
+        -webkit-transform: translateX(15%);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateX(0%);
     }
 }
-
 @-webkit-keyframes labelSlideToLeft {
     0% {
         opacity: 0;
-        -webkit-transform: translateX(35%);
+        -webkit-transform: translateX(15%);
     }
     100% {
         opacity: 1;
         -webkit-transform: translateX(0%);
     }
 }
-
 .navbar-menu-entry {
     text-align: center;
     align-items: center;
 }
-
 .navbar-brand-logo {
+    margin-left:16px;
     height: $navbar-height;
-    width: 256px;
+    max-width: 256px;
 }
-
 .navbar-burger.burger {
-    max-height: 24px;
-    max-width: 24px;
-    margin-top: 20px;
-    margin-right: 20px;
+    max-height: 32px;
+    max-width: 32px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-right: 16px;
+    margin-left: 16px;
     @extend .has-background-alpha-white;
-    span {
-        color: $black
-    }
-    border-radius:12px;
+    span {color: $black}
+    border-radius:16px;
 }
 
-.burger.is-active {
+.burger.is-active 
+{
     //border-radius:120px;
 }
 
 .menu-label {
     visibility: hidden;
+    max-width:72px;
+    text-align: end;
 }
-
+ 
+.menu-label-content
+{
+    padding-top:16px!important;
+    font-size: 16px!important;
+    text-align: end;
+}
 .navbar-brand {
     h1 {
-        mix-blend-mode: lighten;
+        mix-blend-mode: darken;
     }
-    backdrop-filter: light(40);
+    backdrop-filter: dark(40);
 }
 
 .navbar-menu-entry {
