@@ -16,19 +16,19 @@ var section01 = document.getElementById("01");
 var section02 = document.getElementById("02");
 navbar.onmouseenter = function(){
 //
-  document.getElementById("header").classList.add("has-background-black");
+  document.getElementById("header").classList.add("has-background-alpha-white");
   //document.getElementById("navLink").classList.add("has-background-black");
   
   document.getElementById("navbarBrand").classList.add("left_stripe_roy");
-  document.getElementById("navbarBrand").classList.add("has-background-white");
+  //document.getElementById("navbarBrand").classList.add("has-background-white");
 }
 navbar.onmouseleave = function(){
-  document.getElementById("header").classList.remove("has-background-black");
+  document.getElementById("header").classList.remove("has-background-alpha-white");
   document.getElementById("navbarBrand").classList.remove("left_stripe_roy");
-  document.getElementById("navbarBrand").classList.remove("has-background-white");
+ // document.getElementById("navbarBrand").classList.remove("has-background-white");
 }
 burger.onmouseenter = function() {
-  document.getElementById("menuLabel").className = "slideUp is-pulled-right pad has-text-right ";
+  document.getElementById("menuLabel").className = "menu-label-slideLeft";
    
   //navbar.style.backgroundColor = "#fff";
   //navbarBrand.style.backgroundColor = "#fff";
