@@ -1,10 +1,12 @@
- 
-
 <section id="01" class="
  section
+ topSection
  hero
  section-color-black
 ">
+<img data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload is-hidden-desktop " style="background-size:contain;max-height:50vh" alt="Hello Bulgo" width="100%" height="100%" />
+
+<img data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload is-hidden-touch hero-image" style="background-size:contain; " alt="Hello Bulgo" width="100%" height="100%" />
   <div class="
    hero-parallax
    hero-body
@@ -12,17 +14,15 @@
     <div class="
      parallax-container
      container
-     is-fluid
-     
-     pad
+     is-fluid 
     ">
       <div id=" " class=" 
        columns
        is-centered 
        has-text-centered
       ">
-        <div class=" column is-10 ">
-          <h1 class=" title has-text-light">
+        <div class=" column is-9 pad2y">
+          <h1 class=" title has-text-light is-uppercase">
             {{.Site.Params.homepage_01.title }}
           </h1>
           <div id="magicDiv01" class="magicDiv" data-delay="0s">
@@ -33,7 +33,7 @@
             <p class="is-size-7 is-uppercase">
               {{ .Site.Params.homepage_01.paragraph }}
             </p>
-            <p class=" ">
+            <p class=" is-uppercase  ">
               <a href="{{ .Site.Params.homepage_01.linkUrl_01 }}" class="pad1x">
                 <span class="fa fa-{{ .Site.Params.homepage_01.linkIcon_01 }}"></span>
                 {{ .Site.Params.homepage_01.linkName_01 }}
@@ -48,12 +48,12 @@
               </a>
             </p>
           </div>
-          <br>
-          <a href="/#02" class="pad2 is-pulled-right"><span class="fa fa-arrow-down fa-3x"></span></a>
+        </div>
+      </div>
+      <div class="columns has-text-centered is-hidden-mobile">
+        <div class="column is-12 has-text-centered"> 
+          <a href="/#02" class=" "><span class="fa fa-arrow-down fa-3x"></span></a>
         </div>
       </div>
     </div>
-    <img data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload" style="background-size:contain;max-height:100vh"
-      alt="hello" width="100%" height="100%">
-
 </section>
