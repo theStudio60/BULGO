@@ -27,11 +27,11 @@
 
     <div id="navbarMenu" class="navbar-menu navbar-menu-{{ $navbar_color }}">
 
-        <div class="navbar-end ">
+        <div class="navbar-end  is-hidden-desktop" id="navList">
             <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="{{ "/" | absURL }}">
                 <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_01 }}"></span> {{ .Site.Params.navbar.menuLinkName_01 }}
             </a>
-            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="{{ "/about" | absURL }}">
+            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#02">
                 <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span> {{ .Site.Params.navbar.menuLinkName_02 }}
             </a>
             <a class="navbar-item has-text-right navbar-menu-entry" href="{{ "/collections" | absURL }}">
