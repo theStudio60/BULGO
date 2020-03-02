@@ -37,9 +37,10 @@ article,
   padding-top:$navbar-height*2!important;
   padding-right:$gap/2!important;
   padding-left:$gap/2!important;
-  padding-bottom:$navbar-height*2!important;
+  padding-bottom:$navbar-height!important;
   margin:0 0 0 0;
   z-index:20!important;
+  min-height:50vh;
 }
 .hero-body
 {
@@ -52,7 +53,7 @@ article,
 {
 // display:grid;
   //height: 100vh;
-  padding-top:$navbar-height;
+  //padding-top:$navbar-height;
   width: 100%;
   background-repeat: repeat-y;
 }
