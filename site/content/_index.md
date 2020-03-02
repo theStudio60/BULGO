@@ -10,7 +10,7 @@ page_color: ""
 page_left_stripe: ""
 page_background_image: ""
 
-footer_color: "yellow"
+footer_color: "black"
 footer_left_stripe: "roy"
 
 ---

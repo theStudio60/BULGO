@@ -43,7 +43,7 @@ menuLinkName_02 = "about"
 menuLinkIcon_02 = ""
 
 menuLinkUrl_03 = ""
-menuLinkName_03 = "collections"
+menuLinkName_03 = "Offers"
 menuLinkIcon_03 = ""
 
 menuLinkUrl_04 = ""
@@ -76,7 +76,7 @@ title = "Hello world 🙂"
 subtitle = "My name is Bulgo. I'm a theme for Hugo, the static website generator. I was made with Bulma CSS. Actually, i use mainly orange, red, yellow, white and black colors. "
 paragraph = "This section has a white background and a colored stripe on the left."
 imageSrc = "images/k7.png"
-imageAlt = "Vinyls Pile"
+imageAlt = "Bulgo tape"
 
 linkUrl_01 = ""
 linkIcon_01 = "list"
@@ -90,8 +90,8 @@ title = "this is how a yellow section looks like"
 subtitle = "we use arial black on all headings"
 paragraph = "My creators created me to be an quick and easy theming setup for their own website. "
 
-imageSrc = "images/k7.png"
-imageAlt = "Vinyls Pile"
+imageSrc = "images/bg-img-home-yellow.png"
+imageAlt = "Vinyls and tapes yellow"
 
 linkUrl_01 = ""
 linkIcon_01 = " "

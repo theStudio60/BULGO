@@ -80,24 +80,30 @@ document.addEventListener("DOMContentLoaded", function() {
   // Functions
   function scrollFxFunction() {
   
-  var section02_top = $("#01").height() - 1;
+  var section02_top = $("#01").height() - 64;
   
   var section03_01_top = section02_top + $("#02").height();
+
   var section03_02_top = section03_01_top + $("#03_01").height();
   var section03_03_top = section03_02_top + $("#03_02").height();
+ 
+  var section04_top = section03_03_top + $("#03_03").height();
   
   if (document.body.scrollTop > section02_top || document.documentElement.scrollTop > section02_top  ) {
       document.getElementById("magicDiv02").className = "slideUp";
-    }
+  }
   if (document.body.scrollTop > section03_01_top || document.documentElement.scrollTop > section03_01_top ) {
       document.getElementById("magicDiv03").className = "slideUp";
-    }
+  }
   if (document.body.scrollTop > section03_02_top || document.documentElement.scrollTop > section03_02_top  ) {
       document.getElementById("magicDiv04").className = "slideUp";
-    }
+  }
   if (document.body.scrollTop > section03_03_top || document.documentElement.scrollTop > section03_03_top  ) {
       document.getElementById("magicDiv05").className = "slideUp";
-    }
+  }
+  if (document.body.scrollTop > section04_top || document.documentElement.scrollTop > section04_top  ) {
+      document.getElementById("magicDiv06").className = "slideUp";
+  }    
   }
   function getAll(selector) {
     return Array.prototype.slice.call(document.querySelectorAll(selector), 0);
