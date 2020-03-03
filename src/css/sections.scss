@@ -2,7 +2,15 @@
 {
   margin-left:$gap;
 }
-
+.is-absolute,
+.is-parallax
+{
+  position:fixed;
+}
+.is-relative
+{
+  position:relative;
+}
 section,
 footer
 
@@ -42,6 +50,7 @@ article,
   margin:0 0 0 0;
   z-index:20!important;
   min-height:50vh;
+
 }
 .hero-body
 {
@@ -78,8 +87,9 @@ article,
   top:0;
   
   overflow-y: hidden;
+  z-index:0;
 }
-
+/*
 .hero-parallax
 {
   padding-right:0!important;
@@ -95,28 +105,31 @@ article,
   background-size:cover;
   z-index:-1;
 }
-
-.parallax-container.container{
+*/
+.absolute-container {
   //backdrop-filter:blur(20px);
-   
-  top:25%;
+  top:20vh;
   position:absolute;
+  z-index:25;
+
 }
-.parallax-container.parallax-white,
-.parallax-container.parallax-black,
-.parallax-container.parallax-orange,
-.parallax-container.parallax-yellow,
-.parallax-container.parallax-red{
-  background-repeat: repeat;
-  width:100%;
+.hero-image-container.container,
+.hero-image-container.hero-image-container-white,
+.hero-image-container.hero-image-container-black,
+.hero-image-container.hero-image-container-orange,
+.hero-image-container.hero-image-container-yellow,
+.hero-image-container.hero-image-container-red
+{
+  position:absolute;
+  margin-top:20vh;
+  width:100%; 
 }
-//.parallax-container.parallax-white{background-color:$white-alpha;background-image:$xy_lines_FFF;}
-//.parallax-container{background-color:transparent;--filter:$backdrop-alpha;backdrop-filter:$backdrop-alpha;}
-.parallax-container{@extend .has-background-alpha-black;}
-//.parallax-container.parallax-black{background-color:$black-alpha-half;background-image:$xy_lines_000;}
-//.parallax-container.parallax-orange{background-color:$orange-alpha;}
-//.parallax-container.parallax-yellow{background-color:$yellow-alpha;background-image:$xy_lines_FFF;}
-//.parallax-container.parallax-red{background-color:$red-alpha;}
+.hero-image-container-white{@extend .has-background-alpha-white;}
+.hero-image-container-black{@extend .has-background-alpha-black;}
+.hero-image-container-yellow{@extend .has-background-alpha-yellow;}
+.hero-image-container-orange{@extend .has-background-alpha-orange;}
+.hero-image-container-red{@extend .has-background-alpha-red;}
+
 // #
 // # transparent. section style :
 // #
