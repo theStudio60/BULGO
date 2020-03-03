@@ -11,10 +11,7 @@ document.onmouseenter = function() {};
 //var menuLabel = document.getElementById("menuLabel");
 var burger = document.getElementById("burger");
 var navbar = document.getElementById("header");
-var navbarMenu = document.getElementById("navbarMenu");
-var navbarBrand = document.getElementById("navbarBrand");
-var section01 = document.getElementById("01");
-var section02 = document.getElementById("02");
+ 
 navbar.onmouseenter = function(){ 
   document.getElementById("header").classList.add("has-background-alpha-black");
   document.getElementById("navList").classList.remove("is-hidden-desktop"); 
@@ -29,6 +26,10 @@ burger.onmouseenter = function() {
 burger.onmouseleave = function() {
   document.getElementById("menuLabel").className = "menu-label";
 };
+ 
+$( '.navbar-menu .navbar-end .navbar-menu-entry' ).on("click", function(){
+  $('.navbar-menu').removeClass('is-active');
+});
 
 document.addEventListener("DOMContentLoaded", function() {
   // Dropdowns in navbar
@@ -37,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function() {
   window.onscroll = function () {scrollFxFunction()};
   
   
-  var $dropdowns = getAll(" .navbar-item.has-dropdown:not(.is-hoverable)");
+  var $dropdowns = getAll(".navbar-item.has-dropdown:not(.is-hoverable)");
   if ($dropdowns.length > 0) {
     $dropdowns.forEach(function($el) {
       $el.addEventListener("click", function(event) {
@@ -47,6 +48,8 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.addEventListener("click", function(event) {
       closeDropdowns();
+      document.getElementById("navbarMenu").classList.remove("is-active");
+
     });
   }
   function closeDropdowns() {
