@@ -1,29 +1,15 @@
 {{ $navbar_color := .Params.navbar_color }} {{ $navbar_left_stripe := .Params.navbar_left_stripe }}
 <nav id="header" class=" navbar has-shadow is-fixed-top navbar-color-{{ $navbar_color }} is-flex" role="navigation" aria-label="main-navigation">
-
-    <div class="navbar-brand " id="navbarBrand">
-        <a id="headerTitle" class="navbar-brand-logo is-uppercase " href="{{.Site.BaseURL | absURL }}">
-           
-            <img class=" " src="{{ .Site.Params.logo }}" alt="{{ .Site.Params.title }}" height=" " style="max-height:64px;"> 
-
-            <!--    
-                
-                 <h1 class="subtitle has-text-black">{{.Site.Title }}</h1>
-
--->
-        </a>
-
-    </div>
-    <div class="container is-fluid is-marginless is-paddingless is-borderless has-text-right is-hidden-desktop" style="">
-    <div id="menuLabel" class="menu-label"><p class="menu-label-content">MENU</p></div>
-</div>
-    <a id="burger" style=" " role="button" class="navbar-burger burger pad" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
-
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <!--<span class="fa  fa-arrow"></span>-->
+  <div class="navbar-brand " id="navbarBrand">
+    <a id="headerTitle" class="navbar-brand-logo is-uppercase " href="{{.Site.BaseURL | absURL }}">
+      {{ partial "elements/main_logotype" . }}
     </a>
+  </div>
+  <div class="container is-fluid is-marginless is-paddingless is-borderless has-text-right is-hidden-desktop" style="">
+    {{ partial "navbar/menu_label" . }}
+  </div>
+  {{ partial "navbar/burger" . }}
+
 
     <div id="navbarMenu" class="navbar-menu navbar-menu-{{ $navbar_color }}">
 
@@ -34,10 +20,19 @@
             <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#02">
                 <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span> {{ .Site.Params.navbar.menuLinkName_02 }}
             </a>
+            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_01">
+                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>yellow
+            </a>
+            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_02">
+                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>orange
+            </a>
+            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_03">
+                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>red
+            </a>            
             <a class="navbar-item has-text-right navbar-menu-entry" href="#04">
                 <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_03 }}"></span> {{ .Site.Params.navbar.menuLinkName_03 }}
             </a>
-            <a class="navbar-item has-text-right navbar-menu-entry" href="{{ "/contact" | absURL }}">
+            <a class="navbar-item has-text-right navbar-menu-entry" href="#contact">
                 <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_04 }}"></span> {{ .Site.Params.navbar.menuLinkName_04 }}
             </a>
             <a class="navbar-item has-text-right navbar-menu-entry" href="{{ .Site.Params.navbar.menuLinkUrl_05 }}">
