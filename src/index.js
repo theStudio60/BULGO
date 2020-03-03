@@ -29,15 +29,18 @@ burger.onmouseleave = function() {
  
 $( '.navbar-menu .navbar-end .navbar-menu-entry' ).on("click", function(){
   $('.navbar-menu').removeClass('is-active');
+  $('.navbar ').removeClass('has-background-alpha-black');
+  $('.navbar-burger').removeClass('is-active');
+
+
 });
 
 document.addEventListener("DOMContentLoaded", function() {
   // Dropdowns in navbar
-  document.getElementById("magicDiv01").className = "slideUp";
-  
+  document.getElementById("scrollfx_Div01").className = "slideUp";
+
   window.onscroll = function () {scrollFxFunction()};
-  
-  
+
   var $dropdowns = getAll(".navbar-item.has-dropdown:not(.is-hoverable)");
   if ($dropdowns.length > 0) {
     $dropdowns.forEach(function($el) {
@@ -48,7 +51,9 @@ document.addEventListener("DOMContentLoaded", function() {
     });
     document.addEventListener("click", function(event) {
       closeDropdowns();
-      document.getElementById("navbarMenu").classList.remove("is-active");
+      //document.getElementById("burger").classList.remove("is-active");
+      //document.getElementById("navbarMenu").classList.remove("is-active");
+     
 
     });
   }
@@ -82,8 +87,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
   // Functions
   function scrollFxFunction() {
-  
-  var section02_top = $("#01").height() - 64;
+ 
+    
+
+  //  document.getElementById("heroImg").className = "slideUp";
+  var section02_top = $("#home").height() - 64;
   
   var section03_01_top = section02_top + $("#02").height();
 
@@ -93,19 +101,19 @@ document.addEventListener("DOMContentLoaded", function() {
   var section04_top = section03_03_top + $("#03_03").height();
   
   if (document.body.scrollTop > section02_top || document.documentElement.scrollTop > section02_top  ) {
-      document.getElementById("magicDiv02").className = "slideUp";
+      document.getElementById("scrollfx_Div02").className = "slideUp";
   }
   if (document.body.scrollTop > section03_01_top || document.documentElement.scrollTop > section03_01_top ) {
-      document.getElementById("magicDiv03").className = "slideUp";
+      document.getElementById("scrollfx_Div03").className = "slideUp";
   }
   if (document.body.scrollTop > section03_02_top || document.documentElement.scrollTop > section03_02_top  ) {
-      document.getElementById("magicDiv04").className = "slideUp";
+      document.getElementById("scrollfx_Div04").className = "slideUp";
   }
   if (document.body.scrollTop > section03_03_top || document.documentElement.scrollTop > section03_03_top  ) {
-      document.getElementById("magicDiv05").className = "slideUp";
+      document.getElementById("scrollfx_Div05").className = "slideUp";
   }
   if (document.body.scrollTop > section04_top || document.documentElement.scrollTop > section04_top  ) {
-      document.getElementById("magicDiv06").className = "slideUp";
+      document.getElementById("scrollfx_Div06").className = "slideUp";
   }    
   }
   function getAll(selector) {
