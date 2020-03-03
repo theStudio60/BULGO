@@ -15,25 +15,21 @@ disableKinds = ["RSS", "taxonomy", "taxonomyTerm"]
  logo = "img/bulgo-logotype.svg"
 
 # Bulgo customized elements
-navbar_color = "white"
-navbar_left_stripe = "roy"
-
+navbar_color = " "
+navbar_left_stripe = " "
 page_color = ""
 page_left_stripe = ""
 page_background_image = ""
 
-footer_color = "white"
-footer_left_stripe = "roy"
+footer_color = ""
+footer_left_stripe = ""
 
 copyright_note_en = "All rights reserved."
 
 company_name= "Studio60"
 company_description= "Your web agency based in Lausanne [ch]. We design and develop things for the web."
 company_phone =  "+41 (0)79 927 54 63"
-company_mail = " "
 company_logo = "img/studio60-logotype.svg"
-
-
 github = "https://github.com/theStudio60"
 
 [Params.navbar]
