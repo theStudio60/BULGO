@@ -1,8 +1,143 @@
 {{ define "main" }}
 
-{{ partial "home/01" . }}
-{{ partial "home/02" . }}
-{{ partial "home/03" . }}
-{{ partial "home/04" . }}
-
+<!---
+#
+# 01 : home
+# there are two differents style for the top section, for touch devices and large screen
+#
+-->
+<section id="home" class="hero section section-color-black">
+    <!--  desktop screens start -->
+    <div class="hero-body hero-image is-paddingless is-marginless is-borderless is-hidden-touch ">
+      <div class="container hero-image-container hero-image-container-black is-fluid " style="position:absolute;top:128;z-index:10">
+        <div id=" " class="  columns  is-centered is-vcentered has-text-centered ">
+          <div class=" column is-12 pad2 ">
+            <h1 class=" title has-text-light is-uppercase">
+              {{.Site.Params.homepage_01.title }}
+            </h1>
+            <div id="scrollfx_Div01" class="scrollfx_Div" data-delay="0s">
+              {{ partial "home/scrollfx_div01" . }}
+            </div>
+          </div>
+        </div>
+        <div class="columns is-hidden-touch pad2y">
+          <div class="column is-12 has-text-centered"> 
+            <a href="/#02">
+              {{ partial "elements/arrow-down-3x" . }}
+            </a>
+          </div>
+        </div>
+      </div>
+      <img id="heroImg" data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload " style="background-size:cover;z-index:0" alt="Hello Bulgo" width="100%" height="100%" />
+    </div>
+  <!--  desktop screens end -->
+  <!--  touch screens start -->
+    <div class="hero-head is-paddingless is-marginless is-borderless  is-hidden-desktop " style="max-height: 55vh;"> 
+      <img data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload" style="background-size:cover; " alt="Hello Bulgo" width="100%" height="100%" />
+    </div>
+    <div class="section-body is-paddingless is-marginless is-borderless  is-hidden-desktop " style=""> 
+      <div id=" " class="columns is-centered  has-text-centered">
+        <div class="column is-12 pad2 ">
+          <h1 class="title has-text-light is-uppercase">
+            {{.Site.Params.homepage_01.title }}
+          </h1>
+          <div id="scrollfx_Div01" class=" " data-delay="0s">
+            {{ partial "home/scrollfx_div01" . }}
+          </div>
+        </div>
+      </div>
+    </div>
+  <!--  touch screens end -->
+  </section>
+  <!---
+  #
+  # #02 : about this stuff ??
+  #  
+  #
+  -->
+  <section id="02" class="section-color-white">
+    <div class=" section-body section-body-white left_stripe_roy  " >
+      <div id="scrollfx_Div02" class="scrollfx_Div container is-fluid pad2" data-delay="0.9s" style="margin-left:24px">
+        {{ partial "home/scrollfx_div02" . }}
+      </div> 
+      <div class="columns is-hidden-touch pad2y">
+        <div class="column is-12 has-text-centered"> 
+            <a href="/#03_01">
+              {{ partial "elements/arrow-down-3x" . }}
+            </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!---
+  #
+  # #03 : three different losange shaped sections
+  #
+  -->
+  <!-- 0301 : yellow-->
+  <img class="left_stripe_roy is-paddingless is-marginless has-background-white" src="img/delta-top-yellow.svg" width="100%" height="100%" >
+  
+  <section class="section-color-yellow" id="03_01" > 
+    <div class="section-body section-body-yellow  " >
+      <div class="container is-fluid ">
+        <div id="scrollfx_Div0301" class="scrollfx_Div" data-delay="1.9s">
+        {{ partial "home/scrollfx_div0301" . }}
+        </div>
+        <div class="columns is-hidden-mobile pad2y">
+          <div class="column is-12 has-text-centered"> 
+            <a href="/#03_02" class=" "><span class="fa fa-arrow-down fa-3x"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img class="is-paddingless is-marginless has-background-orange" src="img/delta-bottom-yellow.svg" width="100%" height="100%" >
+  <!-- 0302 : orange-->
+  <section class="section section-color-orange" id="03_02">
+    <div class="section-body section-body-orange  " >
+      <div class="container is-fluid ">
+        <div id="scrollfx_Div0302" class="scrollfx_Div" data-delay="1.9s">
+          {{ partial "home/scrollfx_div0302" . }}
+        </div>
+        <div class="columns is-hidden-mobile pad2y">
+          <div class="column is-12 has-text-centered"> 
+            <a href="/#03_03" class=" "><span class="fa fa-arrow-down fa-3x"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <img class="is-paddingless is-marginless has-background-orange" src="img/delta-top-red.svg" width="100%" height="100%" >
+  <!-- 0303 :red-->
+  <section class="section section-color-red" id="03_03">
+    <div class="section-body section-body-red">
+      <div class="container is-fluid ">
+        <div id="scrollfx_Div0303" class="scrollfx_Div" data-delay="1.9s">
+          {{ partial "home/scrollfx_div0303" . }}
+        </div>
+        <div class="columns is-hidden-mobile pad2y">
+          <div class="column is-12 has-text-centered"> 
+            <a href="/#04" class=" "><span class="fa fa-arrow-down fa-3x"></span></a>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </section> 
+  <!---
+  #
+  # #04 : about this stuff ??
+  # todo : need to make variables  
+  #
+  -->
+  <img class="is-paddingless is-marginless has-background-red" src="img/delta-top-white.svg" width="100%" height="100%" >
+  <section class="section-color-white  " id="04">
+    <div class="section-body section-body-white" >
+      <div class="container is-fluid " >
+        <div id="scrollfx_Div04" class="scrollfx_Div" >
+          {{ partial "home/scrollfx_div04" .}}
+        </div>
+      </div>
+    </div>
+  </section>
+  
 {{ end }}
