@@ -1,41 +1,35 @@
 {{ $footer_color := .Params.footer_color }}
 {{ $footer_left_stripe := .Params.footer_left_stripe }}
-<footer class="footer footer-color-{{ $footer_color }} {{ $footer_color }} left_stripe_{{ $footer_left_stripe }} ">
-  <div class="footer-body">
+<footer class="footer-color-{{ $footer_color }} {{ $footer_color }} left_stripe_{{ $footer_left_stripe }} " id="contact">
+  <div class="footer-body pad2">
     <div class="container " style="margin-left:24px;">
-      <div class="columns is-centered">
-        <div class="column is-6 pad2 ">
-      <div class="field">
-        <label class="label">Name</label>
-        <div class="control">
-          <input class="input" type="text" placeholder="Text input">
-        </div>
-      </div>
-
-      <div class="field">
-        <label class="label">Username</label>
-        <div class="control has-icons-left has-icons-right">
-          <input class="input is-success" type="text" placeholder="Text input" value="bulma">
-          <span class="icon is-small is-left">
-            <i class="fa fa-lg fa-user"></i>
-          </span>
-          <span class="icon is-small is-right">
-            <i class="fa fa-lg fa-check"></i>
-          </span>
-        </div>
-        <p class="help is-success">This username is available</p>
-      </div>
- 
-
+      <div class="columns is-centered is-vcentered">
+        <div class="column is-6">
+          {{ partial "elements/gmap" . }}
         </div>
         <div class="column is-6 ">
-          <p class=" ">
-            &copy; {{ now.Format "2006"}} - {{ .Site.Params.company_name }} - {{ .Site.Params.copyright_note_en }}
-            <br>
-            <a>Terms of Service</a>&nbsp;-&nbsp;<a>Privacy Policy</a>
+          <img class=" " src="{{ .Site.Params.company_logo }}" alt="{{ .Site.Params.company_name }}" height=" " style=" "> 
+          <p class="has-text-left pad1y">
+            {{ .Site.Params.company_description }}
           </p>
-        </div>
+          <p class="is-uppercase"  > 
+            {{ partial "elements/arrow-right" . }}
+            <i>
+              {{ partial "obfuscated_email" . }}
+            </i>
+          </p>
+          <p class="is-uppercase"  >
+            {{ partial "elements/arrow-right" . }}
+            <i>
+              {{ .Site.Params.company_phone }}
+            </i>
+          </p> 
+        </div>    
       </div>
+      <hr>
+      <p class="has-text-left pad1x">
+        &copy; {{ now.Format "2006"}} - {{ .Site.Params.company_name }} - {{ .Site.Params.copyright_note_en }}
+      </p>
     </div>
   </div>
 </footer>
