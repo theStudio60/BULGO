@@ -1,0 +1,26 @@
+<h3 class=" subtitle  is-uppercase ">
+    {{.Site.Params.homepage_01.subtitle }}
+  </h3>
+  <hr>
+  <p class="is-size-7 is-uppercase">
+    {{ .Site.Params.homepage_01.paragraph }}
+    <a href="{{ .Site.Params.homepage_01.paragraph_linkUrl }}" class=" ">
+       
+      {{ .Site.Params.homepage_01.paragraph_linkName }}
+    </a>
+  </p>
+  <br>
+  <p class=" is-uppercase  ">
+    <a href="{{ .Site.Params.homepage_01.linkUrl_01 }}" class="pad1x">
+      <span class="fa fa-{{ .Site.Params.homepage_01.linkIcon_01 }}"></span>
+      {{ .Site.Params.homepage_01.linkName_01 }}
+    </a>
+    <a href="{{ .Site.Params.homepage_01.linkUrl_02 }}" class="pad1x">
+      <span class="
+    fa
+    fa-{{ .Site.Params.homepage_01.linkIcon_02 }}
+    ">
+      </span>
+      {{ .Site.Params.homepage_01.linkName_02 }}
+    </a>
+  </p>
