@@ -104,16 +104,16 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("scrollfx_Div02").className = "slideUp";
   }
   if (document.body.scrollTop > section03_01_top || document.documentElement.scrollTop > section03_01_top ) {
-      document.getElementById("scrollfx_Div03").className = "slideUp";
+      document.getElementById("scrollfx_Div0301").className = "slideUp";
   }
   if (document.body.scrollTop > section03_02_top || document.documentElement.scrollTop > section03_02_top  ) {
-      document.getElementById("scrollfx_Div04").className = "slideUp";
+      document.getElementById("scrollfx_Div0302").className = "slideUp";
   }
   if (document.body.scrollTop > section03_03_top || document.documentElement.scrollTop > section03_03_top  ) {
-      document.getElementById("scrollfx_Div05").className = "slideUp";
+      document.getElementById("scrollfx_Div0303").className = "slideUp";
   }
   if (document.body.scrollTop > section04_top || document.documentElement.scrollTop > section04_top  ) {
-      document.getElementById("scrollfx_Div06").className = "slideUp";
+      document.getElementById("scrollfx_Div04").className = "slideUp";
   }    
   }
   function getAll(selector) {
