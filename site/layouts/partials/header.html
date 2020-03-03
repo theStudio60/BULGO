@@ -9,38 +9,41 @@
     {{ partial "navbar/menu_label" . }}
   </div>
   {{ partial "navbar/burger" . }}
-
-
-    <div id="navbarMenu" class="navbar-menu navbar-menu-{{ $navbar_color }}">
-
-        <div class="navbar-end  is-hidden-desktop" id="navList">
-            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="{{ "/" | absURL }}">
-                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_01 }}"></span> {{ .Site.Params.navbar.menuLinkName_01 }}
-            </a>
-            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#02">
-                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span> {{ .Site.Params.navbar.menuLinkName_02 }}
-            </a>
-            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_01">
-                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>yellow
-            </a>
-            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_02">
-                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>orange
-            </a>
-            <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_03">
-                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>red
-            </a>            
-            <a class="navbar-item has-text-right navbar-menu-entry" href="#04">
-                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_03 }}"></span> {{ .Site.Params.navbar.menuLinkName_03 }}
-            </a>
-            <a class="navbar-item has-text-right navbar-menu-entry" href="#contact">
-                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_04 }}"></span> {{ .Site.Params.navbar.menuLinkName_04 }}
-            </a>
-            <a class="navbar-item has-text-right navbar-menu-entry" href="{{ .Site.Params.navbar.menuLinkUrl_05 }}">
-                <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_05 }}"></span> {{ .Site.Params.navbar.menuLinkName_05 }}
-            </a>
-        </div>
-
+  <div id="navbarMenu" class="navbar-menu navbar-menu-{{ $navbar_color }}">
+    <div class="navbar-end  is-hidden-desktop" id="navList">
+      <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="{{ "/" | absURL }}">
+        <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_01 }}">
+        </span>
+        {{ .Site.Params.navbar.menuLinkName_01 }}
+      </a>
+      <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#02">
+        <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"> </span> 
+        {{ .Site.Params.navbar.menuLinkName_02 }}
+      </a>
+      <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_01">
+        <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>
+        yellow
+      </a>
+      <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_02">
+        <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>
+        orange
+      </a>
+      <a id="navLink" class="navbar-item has-text-right navbar-menu-entry" href="#03_03">
+        <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_02 }}"></span>
+        red
+      </a>            
+      <a class="navbar-item has-text-right navbar-menu-entry" href="#04">
+        <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_03 }}"></span> 
+        {{ .Site.Params.navbar.menuLinkName_03 }}
+      </a>
+      <a class="navbar-item has-text-right navbar-menu-entry" href="#contact">
+        <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_04 }}"></span> 
+        {{ .Site.Params.navbar.menuLinkName_04 }}
+      </a>
+      <a class="navbar-item has-text-right navbar-menu-entry" href="{{ .Site.Params.navbar.menuLinkUrl_05 }}">
+        <span class="fa fa-2x fa-{{ .Site.Params.navbar.menuLinkIcon_05 }}"></span> 
+        {{ .Site.Params.navbar.menuLinkName_05 }}
+      </a>
     </div>
-    
-
+  </div>
 </nav>
