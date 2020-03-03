@@ -1,60 +1,46 @@
-<section id="01" class="
- section
- topSection
+<section id="home" class="
  hero
+ section
  section-color-black
 ">
-<img data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload is-hidden-desktop " style="background-size:contain;max-height:50vh" alt="Hello Bulgo" width="100%" height="100%" />
-
-<img data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload is-hidden-touch hero-image" style="background-size:contain; " alt="Hello Bulgo" width="100%" height="100%" />
-  <div class="
-   hero-parallax
-   hero-body
-  ">
-    <div class="
-     parallax-container
-     container
-     is-fluid 
-    ">
-      <div id=" " class=" 
-       columns
-       is-centered 
-       has-text-centered
-      ">
-        <div class=" column is-9 pad2y">
-          <h1 class=" title has-text-light is-uppercase">
-            {{.Site.Params.homepage_01.title }}
-          </h1>
-          <div id="magicDiv01" class="magicDiv" data-delay="0s">
-            <h3 class=" subtitle  is-uppercase ">
-              {{.Site.Params.homepage_01.subtitle }}
-            </h3>
-            <hr>
-            <p class="is-size-7 is-uppercase">
-              {{ .Site.Params.homepage_01.paragraph }}
-            </p>
-            <br>
-            <p class=" is-uppercase  ">
-              <a href="{{ .Site.Params.homepage_01.linkUrl_01 }}" class="pad1x">
-                <span class="fa fa-{{ .Site.Params.homepage_01.linkIcon_01 }}"></span>
-                {{ .Site.Params.homepage_01.linkName_01 }}
-              </a>
-              <a href="{{ .Site.Params.homepage_01.linkUrl_02 }}" class="pad1x">
-                <span class="
-              fa
-              fa-{{ .Site.Params.homepage_01.linkIcon_02 }}
-              ">
-                </span>
-                {{ .Site.Params.homepage_01.linkName_02 }}
-              </a>
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="columns is-hidden-mobile pad2y">
-        <div class="column is-12 has-text-left"> 
-          <a href="/#02" class=" "><span class="fa fa-arrow-down fa-3x"></span></a>
+<!-- start large screen -->
+<div class="hero-body hero-image is-paddingless is-marginless is-borderless is-hidden-touch ">
+  <div class="container hero-image-container hero-image-container-black is-fluid " style="position:absolute;top:128;z-index:10">
+    <div id=" " class="  columns  is-centered is-vcentered has-text-centered ">
+      <div class=" column is-12 pad2 ">
+        <h1 class=" title has-text-light is-uppercase">
+          {{.Site.Params.homepage_01.title }}
+        </h1>
+        <div id="scrollfx_Div01" class="scrollfx_Div" data-delay="0s">
+          {{ partial "home/scrollfx_div01" . }}
         </div>
       </div>
     </div>
+    <div class="columns is-hidden-touch pad2y">
+      <div class="column is-12 has-text-centered"> 
+        <a href="/#02">
+          {{ partial "elements/arrow-down-3x" . }}
+        </a>
+      </div>
+    </div>
+  </div>
+  <img id="heroImg" data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload " style="background-size:cover;z-index:0" alt="Hello Bulgo" width="100%" height="100%" />
+</div>
+<!-- start touch devices screens -->
+  <div class="hero-head is-paddingless is-marginless is-borderless  is-hidden-desktop " style="max-height: 55vh;"> 
+    <img data-src="{{ .Site.Params.homepage_01.backgroundImageSrc }}" class="lazyload" style="background-size:cover; " alt="Hello Bulgo" width="100%" height="100%" />
+  </div>
+  <div class="hero-body is-paddingless is-marginless is-borderless  is-hidden-desktop " style=""> 
+    <div id=" " class="columns is-centered  has-text-centered">
+      <div class="column is-12 pad2 ">
+        <h1 class="title has-text-light is-uppercase">
+          {{.Site.Params.homepage_01.title }}
+        </h1>
+        <div id="scrollfx_Div01" class=" " data-delay="0s">
+          {{ partial "home/scrollfx_div01" . }}
+        </div>
+      </div>
+    </div>
+         
+  </div>
 </section>
