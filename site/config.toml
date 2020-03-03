@@ -28,12 +28,16 @@ footer_left_stripe = "roy"
 copyright_note_en = "All rights reserved."
 
 company_name= "Studio60"
-company_phone = " "
+company_description= "Your web agency based in Lausanne [ch]. We design and develop things for the web."
+company_phone =  "+41 (0)79 927 54 63"
 company_mail = " "
+company_logo = "img/studio60-logotype.svg"
+
 
 github = "https://github.com/theStudio60"
 
 [Params.navbar]
+menuLabel = "MENU"
 menuLinkUrl_01 = "/"
 menuLinkName_01 = "home"
 menuLinkIcon_01 = ""
@@ -80,7 +84,7 @@ imageAlt = "Bulgo tape"
 
 linkUrl_01 = ""
 linkIcon_01 = "list"
-linkName_01 = "this is a  link"
+linkName_01 = "this is a    link"
 
 
 
