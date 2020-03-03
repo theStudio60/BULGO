@@ -61,8 +61,11 @@ menuLinkIcon_05 = "github"
 
 [Params.homepage_01]
 title = "Bulgo"
-subtitle = "Another bulma css theme for hugo static website generator"
-paragraph = "This hugo theme was designed and developed by Fabien Dupont & Isaac Aristil (Studio60)"
+subtitle = "A Bulma css theme written for hugo ssg"
+paragraph = "This hugo theme was designed and developed by Fabien Dupont"
+
+paragraph_linkUrl = "https://studio60.ch"
+paragraph_linkName = "@Studio60"
 
 backgroundImageSrc = "images/vinyl_playing_bw.jpg"
 
@@ -116,8 +119,8 @@ linkName_01 = "Links are Orange on white containers"
 
 [Params.homepage_03_03]
 topMiniTitle = "lifestyle & stuff"
-title = "Why using a good earphones set is important ?"
-subtitle = ""
+title = "Using a good earphones set is important"
+subtitle = " "
 paragraph = "Good headphones will go as low as 20 Hz, the lowest limit of our hearing. Frequency responses are measured using sine sweeps and special test equipment."
 
 imageSrc = "images/red-earphone_music_lifestyle.jpg"
