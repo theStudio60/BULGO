@@ -1,6 +1,6 @@
 ---
 title: 'Home'
-date: 2019-11-14T19:02:50-07:00
+date: 2020-03-03T19:02:50-07:00
 draft: false
 
 navbar_color: "transparent"
