@@ -58,14 +58,14 @@ menuLinkIcon_05 = "github"
 [Params.homepage_01]
 title = "Bulgo"
 subtitle = "A Bulma css theme written for hugo ssg"
-paragraph = "This hugo theme was designed and developed by studio60"
+paragraph = "This hugo theme was designed and developed by "
 
 paragraph_linkUrl = "https://studio60.ch"
 paragraph_linkName = "@Studio60"
 
 backgroundImageSrc = "images/vinyl_playing_bw.jpg"
 
-linkUrl_01 = "https://STUDIO60.ch/contact"
+linkUrl_01 = "https://STUDIO60.ch"
 linkIcon_01 = "arrow-right"
 linkName_01 = "Contact Us !"
 
@@ -83,7 +83,7 @@ imageAlt = "Bulgo tape"
 
 linkUrl_01 = ""
 linkIcon_01 = "list"
-linkName_01 = "this is a    link"
+linkName_01 = "this is a link"
 
 
 
