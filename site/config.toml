@@ -1,8 +1,8 @@
 baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
-title = "Bulgo"
-subtitle = "Bulma css & hugo"
+title = "Title"
+subtitle = "bulgo hugo theme"
 # RSS, categories and tags disabled for an easy start
 # See configuration options for more details:
 # https://gohugo.io/getting-started/configuration/#toml-configuration
@@ -27,8 +27,9 @@ footer_left_stripe = ""
 copyright_note_en = "All rights reserved."
 
 company_name= "Studio60"
-company_description= "Your web agency based in Lausanne [ch]. We design and develop things for the web."
-company_phone =  "+41 (0)79 927 54 63"
+company_website= "https://studio60.ch"
+company_description= ""
+company_phone =  "+41 (0)12 345 67 89"
 company_logo = "img/studio60-logotype.svg"
 github = "https://github.com/theStudio60"
 
@@ -56,16 +57,16 @@ menuLinkIcon_05 = "github"
 
 
 [Params.homepage_01]
-title = "Bulgo"
-subtitle = "A Bulma css theme written for hugo ssg"
-paragraph = "This hugo theme was designed and developed by "
+title = "Hello world"
+subtitle = "lorem ipsum"
+paragraph = "bulgo : hugo ssg theme"
 
 paragraph_linkUrl = "https://studio60.ch"
 paragraph_linkName = "@Studio60"
 
 backgroundImageSrc = "images/vinyl_playing_bw.jpg"
 
-linkUrl_01 = "https://STUDIO60.ch"
+linkUrl_01 = "https://STUDIO60.ch/contact"
 linkIcon_01 = "arrow-right"
 linkName_01 = "Contact Us !"
 
@@ -76,22 +77,22 @@ linkName_02 = "See this project on github"
 [Params.homepage_02]
 topMiniTitle = "another static website made with hugo"
 title = "Hello world 🙂"
-subtitle = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+subtitle = "lorem"
 paragraph = "This section has a white background and a colored stripe on the left."
 imageSrc = "images/k7.png"
 imageAlt = "Bulgo tape"
 
 linkUrl_01 = ""
 linkIcon_01 = "list"
-linkName_01 = "this is a link"
+linkName_01 = "this is a    link"
 
 
 
 [Params.homepage_03_01]
 topMiniTitle = "this is a yellow section"
-title = "this is how a yellow section looks like"
+title = ""
 subtitle = "we use arial black on all headings"
-paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  "
+paragraph = ""
 
 imageSrc = "images/bg-img-home-yellow.png"
 imageAlt = "Vinyls and tapes yellow"
@@ -101,23 +102,23 @@ linkIcon_01 = " "
 linkName_01 = " "
 
 [Params.homepage_03_02]
-topMiniTitle = "this is an orange section 🍊"
-title = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
-subtitle = " "
-paragraph = ""
+topMiniTitle = "orange section"
+title = "title"
+subtitle = "subtitle"
+paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 imageSrc = "images/rca-orange.jpg"
 imageAlt = "orange vinyl label"
 
 linkUrl_01 = ""
-linkIcon_01 = " "
-linkName_01 = "Links are Orange on white containers"
+linkIcon_01 = "facebook"
+linkName_01 = "link"
 
 [Params.homepage_03_03]
 topMiniTitle = "lifestyle & stuff"
-title = "Using a good earphones set is important"
+title = "lorem ipsum"
 subtitle = " "
-paragraph = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. "
+paragraph = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
 
 imageSrc = "images/red-earphone_music_lifestyle.jpg"
 imageAlt = "earphones"

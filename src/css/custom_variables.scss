@@ -1,4 +1,3 @@
-
 /*
 #
 # 01 : colors definition
@@ -6,25 +5,10 @@
 #
 */
 
-$black:        hsl(0, 0%, 4%) !default
-$black-bis:    hsl(0, 0%, 7%) !default
-$black-ter:    hsl(0, 0%, 14%) !default
-$grey-darker:  hsl(0, 0%, 21%) !default
-$grey-dark:    hsl(0, 0%, 29%) !default
-$grey:         hsl(0, 0%, 48%) !default
-$grey-light:   hsl(0, 0%, 71%) !default
-$grey-lighter: hsl(0, 0%, 86%) !default
-$grey-lightest: hsl(0, 0%, 93%) !default
-$white-ter:    hsl(0, 0%, 96%) !default
-$white-bis:    hsl(0, 0%, 98%) !default
-$white:        hsl(0, 0%, 100%) !default
-
-$red:          rgba(250,69,56,100) !default;
-$orange:       rgba(249, 168,7,100) !default;
-$yellow:       rgba(248, 234,9,100) !default;
-
+$black: hsl(0, 0%, 4%) !default $black-bis: hsl(0, 0%, 7%) !default $black-ter: hsl(0, 0%, 14%) !default $grey-darker: hsl(0, 0%, 21%) !default $grey-dark: hsl(0, 0%, 29%) !default $grey: hsl(0, 0%, 48%) !default $grey-light: hsl(0, 0%, 71%) !default $grey-lighter: hsl(0, 0%, 86%) !default $grey-lightest: hsl(0, 0%, 93%) !default $white-ter: hsl(0, 0%, 96%) !default $white-bis: hsl(0, 0%, 98%) !default $white: hsl(0, 0%, 100%) !default $red: rgba(250, 69, 56, 100) !default;
+$orange: rgba(249, 168, 7, 100) !default;
+$yellow: rgba(248, 234, 9, 100) !default;
 $primary: $grey-dark!default;
-
 //$green:        hsl(141, 53%,  53%) !default;
 //$turquoise:    hsl(171, 100%, 41%) !default;
 //$cyan:         hsl(204, 71%,  53%) !default;
@@ -42,56 +26,77 @@ $primary: $grey-dark!default;
 //$red-alpha:          rgba(250,69,56,0.9) !default;
 //$orange-alpha:       rgba(249, 168,7,0.9) !default;
 //$yellow-alpha:       rgba(248, 234,9,0.9) !default;
-$alpha-white:rgba(255,255,255,0.9);
-$alpha-white-half:rgba(255,255,255,0.5);
-$alpha-black:rgba(0,0,0,0.7);
-$alpha-black-half:rgba(0,0,0,0.5);
-
-$alpha-grey:rgba($grey,0.9);
-
-$alpha-yellow:rgba($yellow,0.9) ;
-$alpha-orange:rgba($orange,0.9) ;
-$alpha-red:rgba($red,0.9);
-
+$alpha-white:rgba(255, 255, 255, 0.9);
+$alpha-white-half:rgba(255, 255, 255, 0.5);
+$alpha-black:rgba(0, 0, 0, 0.7);
+$alpha-black-half:rgba(0, 0, 0, 0.5);
+$alpha-grey:rgba($grey, 0.9);
+$alpha-yellow:rgba($yellow, 0.9);
+$alpha-orange:rgba($orange, 0.9);
+$alpha-red:rgba($red, 0.9);
 // # primary alpha
 $alpha-primary:$alpha-white;
-
 // # background color attribution
+.has-background-white {
+    background-color: $white;
+}
 
-.has-background-white
-{background-color:$white;}
-.has-background-alpha-white
-{background-color:$alpha-white;}
-.has-background-black
-{background-color:$black;}
-.has-background-alpha-black
-{background-color:$alpha-black;}
-.has-background-grey
-{background-color:$grey;}
-.has-background-alpha-grey
-{background-color:$alpha-grey;}
-.has-background-yellow
-{background-color:$yellow;}
-.has-background-alpha-yellow
-{background-color:$alpha-yellow;}
-.has-background-orange
-{background-color:$orange;}
-.has-background-alpha-orange
-{background-color:$alpha-orange;}
-.has-background-red
-{background-color:$red;}
-.has-background-alpha-red
-{background-color:$alpha-red;}
+.has-background-alpha-white {
+    background-color: $alpha-white;
+}
+
+.has-background-black {
+    background-color: $black;
+}
+
+.has-background-alpha-black {
+    background-color: $alpha-black;
+}
+
+.has-background-grey {
+    background-color: $grey;
+}
+
+.has-background-alpha-grey {
+    background-color: $alpha-grey;
+}
+
+.has-background-yellow {
+    background-color: $yellow;
+}
+
+.has-background-alpha-yellow {
+    background-color: $alpha-yellow;
+}
+
+.has-background-orange {
+    background-color: $orange;
+}
+
+.has-background-alpha-orange {
+    background-color: $alpha-orange;
+}
+
+.has-background-red {
+    background-color: $red;
+}
+
+.has-background-alpha-red {
+    background-color: $alpha-red;
+}
+
+
 /*
 #
 # 03 : Backdrop filter FX
 #
 */
-$backdrop-alpha: blur(130px)   ;
-.has-background-alpha
-{
-  backdrop-filter:$backdrop-alpha;
+
+$backdrop-alpha: blur(130px);
+.has-background-alpha {
+    backdrop-filter: $backdrop-alpha;
 }
+
 
 /*
 #
@@ -99,15 +104,22 @@ $backdrop-alpha: blur(130px)   ;
 #
 */
 
-$family-sans-serif: "Arial Black", BlinkMacSystemFont, -apple-system, "Helvetica Neue", "Arial", sans-serif !default;
-$family-serif: "Helvetica Neue", "Helvetica", "Roboto",  BlinkMacSystemFont, -apple-system, serif !default;
-
+$family-sans-serif: "Arial Black",
+BlinkMacSystemFont,
+-apple-system,
+"Helvetica Neue",
+"Arial",
+sans-serif !default;
+$family-serif: "Helvetica Neue",
+"Helvetica",
+"Roboto",
+BlinkMacSystemFont,
+-apple-system,
+serif !default;
 $family-base:$family-sans-serif;
 $family-alt:$family-serif;
-
 $family-monospace: monospace !default;
 $render-mode: optimizeLegibility !default;
-
 $size-1: 3rem !default;
 $size-2: 2.6rem !default;
 $size-3: 2.2rem !default;
@@ -115,88 +127,74 @@ $size-4: 1.8rem !default;
 $size-5: 1.4rem !default;
 $size-6: 1.2rem !default;
 $size-7: 1rem !default;
-
 $weight-light: 300 !default;
 $weight-normal: 400 !default;
 $weight-medium: 500 !default;
 $weight-semibold: 600 !default;
 $weight-bold: 700 !default;
-
 // Spacing
-
 $block-spacing: 1.6rem !default;
-
 // Responsiveness
-
 // The container horizontal gap, which acts as the offset for breakpoints
 $gap: 32px !default;
-
 // Miscellaneous
 $easing: ease-in-out !default;
-
 $radius-small: 0px !default;
 $radius: 0px !default;
 $radius-large: 0px !default;
 $radius-rounded: 290486px !default;
 $speed: 86ms !default;
-
-
 $navbar-box-shadow-color:none;
 $navbar-background-color:none;
 $navbar-height: 4rem !default;
 $navbar-z: 30 !default;
 $navbar-fixed-z: 30 !default;
-
 // Text colors
-
 $text: $black !default;
 $text-invert: findColorInvert($text) !default;
 $text-light: $white !default;
 $text-strong: $black !default;
+.has-text-color-white {
+    color: $white !important;
+}
 
-.has-text-color-white
-{
-  color:$white !important;
+.has-text-color-black {
+    color: $black !important;
 }
-.has-text-color-black
-{
-  color:$black !important;
+
+.has-text-color-dark {
+    color: $grey-dark!important;
 }
-.has-text-color-dark
-{
-  color:$grey-dark!important;
+
+.has-text-color-grey {
+    color: $grey !important;
 }
-.has-text-color-grey
-{
-  color:$grey !important;
+
+.has-text-color-yellow {
+    color: $yellow !important;
 }
-.has-text-color-yellow
-{
-  color:$yellow !important;
+
+.has-text-color-orange {
+    color: $orange !important;
 }
-.has-text-color-orange
-{
-  color:$orange !important;
+
+.has-text-color-red {
+    color: $red !important;
 }
-.has-text-color-red
-{
-  color:$red !important;
-}
+
 // # primary text color
-
 .has-text-color-,
 .has-text-color-default,
-.has-text-color-primary
-{
-  color:$primary;
+.has-text-color-primary {
+    color: $primary;
 }
 
-.button
-{
-  border-width: 0px!important;
-  text-transform: uppercase;
-  font-family: $family-serif;
+.button {
+    border-width: 0px!important;
+    text-transform: uppercase;
+    font-family: $family-serif;
 }
+
 
 /*
  Top & bottom triangles (parallelogram effect)
@@ -205,72 +203,146 @@ $text-strong: $black !default;
  //$delta_top-:url( /img/delta-top-.svg); //
  //$delta_bottom-:url( /img/delta-bottom-.svg); //
 */
-.delta{
-  margin: 0;
-  padding:0;
-  border:0;
-  background-repeat:no-repeat;max-height:64px;
+
+
+/*
+.delta {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-repeat: no-repeat;
+    max-height: 64px;
 }
- //white
-$delta_top-white:url( /img/delta-top-white.svg);
-$delta_bottom-white:url( /img/delta-bottom-white.svg);
-.delta-top-white{background-image:$delta_top-white;}
-.delta-bottom-white{background-image:$delta_bottom-white;}
- //black
-$delta_top-black:url( /img/delta-top-black.svg);
-$delta_bottom-black:url( /img/delta-bottom-black.svg);
-.delta-top-black{background-image:$delta_top-black;}
-.delta-bottom-black{background-image:$delta_bottom-black;}
- //yellow
-$delta_top-yellow:url( /img/delta-top-yellow.svg);
-$delta_bottom-yellow:url( /img/delta-bottom-yellow.svg);
-.delta-top-yellow{background-image:$delta_top-yellow;}
-.delta-bottom-yellow{background-image:$delta_bottom-yellow;}
- //orange
-$delta_top-orange:url( /img/delta-top-orange.svg);
-$delta_bottom-orange:url( /img/delta-bottom-orange.svg);
-.delta-top-orange{background-image:$delta_top-orange;}
-.delta-bottom-orange{background-image:$delta_bottom-orange;}
- //red
-$delta_top-red:url( /img/delta-top-red.svg);
-$delta_bottom-red:url( /img/delta-bottom-red.svg);
-.delta-top-red{background-image:$delta_top-red;}
-.delta-bottom-red{background-image:$delta_bottom-red;}
+
+//white
+$delta_top-white:url(/img/delta-top-white.svg);
+$delta_bottom-white:url(/img/delta-bottom-white.svg);
+.delta-top-white {
+    background-image: $delta_top-white;
+}
+
+.delta-bottom-white {
+    background-image: $delta_bottom-white;
+}
+
+//black
+$delta_top-black:url(/img/delta-top-black.svg);
+$delta_bottom-black:url(/img/delta-bottom-black.svg);
+.delta-top-black {
+    background-image: $delta_top-black;
+}
+
+.delta-bottom-black {
+    background-image: $delta_bottom-black;
+}
+
+//yellow
+$delta_top-yellow:url(/img/delta-top-yellow.svg);
+$delta_bottom-yellow:url(/img/delta-bottom-yellow.svg);
+.delta-top-yellow {
+    background-image: $delta_top-yellow;
+}
+
+.delta-bottom-yellow {
+    background-image: $delta_bottom-yellow;
+}
+
+//orange
+$delta_top-orange:url(/img/delta-top-orange.svg);
+$delta_bottom-orange:url(/img/delta-bottom-orange.svg);
+.delta-top-orange {
+    background-image: $delta_top-orange;
+}
+
+.delta-bottom-orange {
+    background-image: $delta_bottom-orange;
+}
+
+//red
+$delta_top-red:url(/img/delta-top-red.svg);
+$delta_bottom-red:url(/img/delta-bottom-red.svg);
+.delta-top-red {
+    background-image: $delta_top-red;
+}
+
+.delta-bottom-red {
+    background-image: $delta_bottom-red;
+}
+
+//*/
+
 
 /* Left Stripes */
 
-.left_stripe{margin-left:24px!important;}
-$xy_lines_000:url( /img/xy_lines_black.png); //black
-$y_lines_000:url( /img/y_lines_black_24x100.png); //black
-.lined_black{background-image:$xy_lines_000;background-repeat: repeat;width:100%;}
-.left_stripe_black-lines
-{
-  background-image:$y_lines_000;
-  background-repeat: repeat-y;
+.left_stripe {
+    margin-left: 24px!important;
 }
 
-$xy_lines_FFF:url( /img/xy_lines_white.png); //white
-$y_lines_FFF:url( /img/y_lines_white_24x100.png); //white
-.lined_white{background-image:$xy_lines_FFF;background-repeat: repeat; }
-.left_stripe_white-lines
-{
-  background-image:$y_lines_FFF;
-  background-repeat: repeat-y;
+$xy_lines_000:url(/img/xy_lines_black.png); //black
+$y_lines_000:url(/img/y_lines_black_24x100.png); //black
+.lined_black {
+    background-image: $xy_lines_000;
+    background-repeat: repeat;
+    width: 100%;
 }
 
-.has-background-white-lines{@extend .lined_white;}
-.has-background-black-lines{@extend .lined_black;}
+.left_stripe_black-lines {
+    background-image: $y_lines_000;
+    background-repeat: repeat-y;
+}
 
+$xy_lines_FFF:url(/img/xy_lines_white.png); //white
+$y_lines_FFF:url(/img/y_lines_white_24x100.png); //white
+.lined_white {
+    background-image: $xy_lines_FFF;
+    background-repeat: repeat;
+}
+
+.left_stripe_white-lines {
+    background-image: $y_lines_FFF;
+    background-repeat: repeat-y;
+}
+
+.has-background-white-lines {
+    @extend .lined_white;
+}
+
+.has-background-black-lines {
+    @extend .lined_black;
+}
 
 $y_stripe_white:url(/img/y-white-24x1.svg);
-.left_stripe_white{background-image:$y_stripe_white;background-repeat: repeat-y;}
+.left_stripe_white {
+    background-image: $y_stripe_white;
+    background-repeat: repeat-y;
+}
+
 $y_stripe_black:url(/img/y-black-24x1.svg);
-.left_stripe_black{background-image:$y_stripe_black;background-repeat: repeat-y;}
+.left_stripe_black {
+    background-image: $y_stripe_black;
+    background-repeat: repeat-y;
+}
+
 $y_stripe_yellow:url(/img/y-yellow-24x1.svg);
-.left_stripe_yellow{background-image:$y_stripe_yellow;background-repeat: repeat-y;}
+.left_stripe_yellow {
+    background-image: $y_stripe_yellow;
+    background-repeat: repeat-y;
+}
+
 $y_stripe_red:url(/img/y-red-24x1.svg);
-.left_stripe_red{background-image:$y_stripe_red;background-repeat: repeat-y;}
+.left_stripe_red {
+    background-image: $y_stripe_red;
+    background-repeat: repeat-y;
+}
+
 $y_stripe_orange:url(/img/y-orange-24x1.svg);
-.left_stripe_orange{background-image:$y_stripe_orange;background-repeat: repeat-y;}
+.left_stripe_orange {
+    background-image: $y_stripe_orange;
+    background-repeat: repeat-y;
+}
+
 $y_stripe_roy:url(/img/y-roy-24x1.svg);
-.left_stripe_roy{background-image:$y_stripe_roy;background-repeat: repeat-y;}
+.left_stripe_roy {
+    background-image: $y_stripe_roy;
+    background-repeat: repeat-y;
+}
